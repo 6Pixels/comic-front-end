@@ -1,38 +1,9 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+/* Nav Bar css */
+#navbackground{width: 100%;height: 600px;background-image: url('https://img.wallpapersafari.com/desktop/1920/1080/32/43/gKaZ0H.jpg');background-size: cover;}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+/* Footer Css */
+#footer{width: 100%; height: 300px;background-image: url('https://i5.walmartimages.com/asr/9f50998d-26bf-4120-b405-09a067437245_1.3eb3876d442c191da2503ce29ad1f736.jpeg');background-size: cover;}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+/* Gallery Css */
+.movieCard{display: inline-block; margin: 12px;}
