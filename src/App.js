@@ -16,6 +16,7 @@ class App extends React.Component {
           <Switch>
             {/* Home Page */}
             <Route exact path="/Home"></Route>
+            {/* Profile Page */}
             <Route exact path="/Profile">
               <NavImg />
               <Route />
