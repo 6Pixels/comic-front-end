@@ -1,8 +1,10 @@
 import React from "react";
 import "./App.css";
-import NavBar from "./Components/NavBar";
-import Footer from "./Components/Footer";
-import NavImg from "./Components/NavImg";
+import NavBar from "./Components/FirstLayer/NavBar";
+import Footer from "./Components/FirstLayer/Footer";
+import NavImg from "./Components/FirstLayer/NavImg";
+import Gallery from "./Components/FirstLayer/Gallery";
+
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { withAuth0 } from "@auth0/auth0-react";
 
@@ -15,15 +17,16 @@ class App extends React.Component {
           <NavBar />
           <Switch>
             {/* Home Page */}
-            <Route exact path="/Home"></Route>
+            <Route exact path="/Home">
+              <div id="navbackground"></div>
+            </Route>
             {/* Profile Page */}
             <Route exact path="/Profile">
               <NavImg />
-              <Route />
-              {/* Gallery Page */}
-              <Route exact path="/Gallery">
-                <h1>Gallery page</h1>
-              </Route>
+            </Route>
+            {/* Gallery Page */}
+            <Route exact path="/Gallery">
+              {isAuthenticated && <Gallery />}
             </Route>
           </Switch>
           <Footer />
