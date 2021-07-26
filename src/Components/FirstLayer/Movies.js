@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import axios from "axios";
-import { Card } from 'react-bootstrap'
+import { Card, Button } from "react-bootstrap";
+import { withAuth0 } from "@auth0/auth0-react";
 
 class Gallery extends Component {
   constructor(props) {
@@ -24,17 +25,20 @@ class Gallery extends Component {
   };
 
   render() {
+    const isAuthenticated = this.props.auth0.isAuthenticated;
     return (
       <div>
         {this.state.movies.map((element, index) => {
           return (
-            <div key={index} className='movieCard'>
+            <div key={index} className="movieCard">
               <Card style={{ width: "18rem" }}>
                 <Card.Img variant="top" src={element.image_url} />
                 <Card.Body>
                   <Card.Title>{element.title}</Card.Title>
                   <Card.Title>{element.release_date}</Card.Title>
-                  {/* <Button variant="primary">Go somewhere</Button> */}
+                  {isAuthenticated && (
+                    <Button variant="primary">Add to Fav</Button>
+                  )}
                 </Card.Body>
               </Card>
             </div>
@@ -45,4 +49,4 @@ class Gallery extends Component {
   }
 }
 
-export default Gallery;
+export default withAuth0(Gallery);

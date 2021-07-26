@@ -13,3 +13,6 @@
 
 /* characters Css */
 .charactersCard{display: inline-block; margin: 12px;}
+
+/* Seacrch Form Css */
+#searchForm{width: 50%;margin: 30px 300px;}
