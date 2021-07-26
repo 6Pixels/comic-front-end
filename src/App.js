@@ -3,7 +3,9 @@ import "./App.css";
 import NavBar from "./Components/FirstLayer/NavBar";
 import Footer from "./Components/FirstLayer/Footer";
 import NavImg from "./Components/FirstLayer/NavImg";
-import Gallery from "./Components/FirstLayer/Gallery";
+import Movies from "./Components/FirstLayer/Movies";
+import Comics from "./Components/FirstLayer/Comics";
+import Characters from "./Components/FirstLayer/Characters";
 
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { withAuth0 } from "@auth0/auth0-react";
@@ -25,8 +27,14 @@ class App extends React.Component {
               <NavImg />
             </Route>
             {/* Gallery Page */}
-            <Route exact path="/Gallery">
-              {isAuthenticated && <Gallery />}
+            <Route exact path="/Movies">
+              <Movies />
+            </Route>
+            <Route exact path="/Comics">
+              <Comics />
+            </Route>
+            <Route exact path="/Characters">
+              <Characters />
             </Route>
           </Switch>
           <Footer />
