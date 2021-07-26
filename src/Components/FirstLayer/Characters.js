@@ -3,6 +3,7 @@ import axios from "axios";
 import { Card } from "react-bootstrap";
 import CharModal from "../SecondLayer/CharModal";
 import SearchForm from "../SecondLayer/SearchForm";
+import { withAuth0 } from "@auth0/auth0-react";
 
 export class Characters extends Component {
   constructor(props) {
@@ -19,6 +20,7 @@ export class Characters extends Component {
     axios
       .get(`${process.env.REACT_APP_SERVER}/characters`)
       .then((result) => {
+        // console.log(result.data)
         this.setState({
           characters: result.data,
         });
@@ -27,12 +29,14 @@ export class Characters extends Component {
         console.log("Error : ", error);
       });
   };
-  showCharModel = (index) => {
-    this.setState({
+  showCharModel = async (index) => {
+    console.log(this.state.characters[index]);
+    await this.setState({
       showModal: true,
       index: index,
       ModalChar: this.state.characters[index],
     });
+    // console.log(this.state.ModalChar);
   };
   hideCharModal = () => {
     this.setState({
@@ -43,13 +47,13 @@ export class Characters extends Component {
   searchItems = (event) => {
     event.preventDefault();
     console.log("Char");
-    const string = event.target.comic.value;
+    const string = event.target.item.value;
     axios
       .get(`${process.env.REACT_APP_SERVER}/characters?characterName=${string}`)
       .then((newData) => {
-        console.log(newData.data);
+        // console.log(newData.data);
         this.setState({
-            characters: newData.data,
+          characters: newData.data,
         });
       })
       .catch((error) => {
@@ -58,6 +62,7 @@ export class Characters extends Component {
   };
 
   render() {
+    const isAuthenticated = this.props.auth0.isAuthenticated;
     return (
       <div>
         <SearchForm
@@ -74,20 +79,23 @@ export class Characters extends Component {
                 <Card.Img variant="top" src={element.imageUrl} />
                 <Card.Body>
                   <Card.Title>{element.name}</Card.Title>
+                  {/* <Card.Text>{element.powerstats.power}</Card.Text> */}
                 </Card.Body>
               </Card>
             </div>
           );
         })}
-        <CharModal
-          showModal={this.state.showModal}
-          hideModal={this.hideCharModal}
-          index={this.state.index}
-          Char={this.state.ModalChar}
-        />
+        {this.state.showModal && (
+          <CharModal
+            showModal={this.state.showModal}
+            hideModal={this.hideCharModal}
+            index={this.state.index}
+            Char={this.state.ModalChar}
+          />
+        )}
       </div>
     );
   }
 }
 
-export default Characters;
+export default withAuth0(Characters);

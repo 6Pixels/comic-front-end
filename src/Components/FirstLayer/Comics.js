@@ -27,13 +27,17 @@ export class Comics extends Component {
 
   searchItems = (event) => {
     event.preventDefault();
-    console.log('Comics');
-    const string = event.target.comic.value;
-    // axios.get().then(vewData).catch(error);
-
-    // this.setState({
-    //   comics: newData.data
-    // })
+    const string = event.target.item.value;
+    axios
+      .get(`${process.env.REACT_APP_SERVER}/comic?comicName=${string}`)
+      .then((newData) => {
+        this.setState({
+          comics: newData.data,
+        });
+      })
+      .catch((error) => {
+        console.log("error", error);
+      });
   };
 
   render() {
