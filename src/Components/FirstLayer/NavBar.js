@@ -10,7 +10,7 @@ class NavBar extends Component {
   render() {
       const isAuthenticated = this.props.auth0.isAuthenticated;
     return (
-      <div>
+      <div id="laith">
         <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
           <Container>
             <Navbar.Brand>Comics Pixels</Navbar.Brand>
