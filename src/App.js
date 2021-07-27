@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.css";
-import NavBar from "./Components/FirstLayer/NavBar";
+import Header from "./Components/FirstLayer/Header";
 import Footer from "./Components/FirstLayer/Footer";
 import NavImg from "./Components/FirstLayer/NavImg";
 import Movies from "./Components/FirstLayer/Movies";
@@ -12,11 +12,10 @@ import { withAuth0 } from "@auth0/auth0-react";
 
 class App extends React.Component {
   render() {
-    const isAuthenticated = this.props.auth0.isAuthenticated;
     return (
-      <>
+      <div id="bodyContainer">
         <Router>
-          <NavBar />
+          <Header />
           <Switch>
             {/* Home Page */}
             <Route exact path="/Home">
@@ -37,9 +36,9 @@ class App extends React.Component {
               <Characters />
             </Route>
           </Switch>
-          <Footer />
+          <Footer id="footer" />
         </Router>
-      </>
+      </div>
     );
   }
 }
