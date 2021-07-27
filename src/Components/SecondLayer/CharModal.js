@@ -24,7 +24,7 @@ export class CharModal extends Component {
               className="ModalCharImg"
               src={Char.imageUrl}
               alt="charecter"
-              // style={{ width: "200px" }}
+            // style={{ width: "200px" }}
             />
 
             <ApperanceTable Char={Char} />
@@ -66,7 +66,7 @@ export class CharModal extends Component {
               Close
             </Button>
             <br />
-            {isAuthenticated && <Button variant="success">Add To Favorite</Button>}
+            {isAuthenticated && <Button variant="success" onClick={this.props.addCharacter}>Add To Favorite</Button>}
           </Modal.Footer>
         </Modal>
       </div>

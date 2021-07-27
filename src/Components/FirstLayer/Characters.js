@@ -3,6 +3,7 @@ import axios from "axios";
 import { Card, Alert } from "react-bootstrap";
 import CharModal from "../SecondLayer/CharModal";
 import SearchForm from "../SecondLayer/SearchForm";
+import { withAuth0 } from "@auth0/auth0-react";
 
 export class Characters extends Component {
   constructor(props) {
@@ -14,6 +15,7 @@ export class Characters extends Component {
       searchKeyword: "",
       showItems: true,
       showError: false,
+      index: 0,
     };
   }
 
@@ -39,6 +41,7 @@ export class Characters extends Component {
     console.log(this.state.characters[index]);
     await this.setState({
       showModal: true,
+      index: index,
       ModalChar: this.state.characters[index],
     });
   };
@@ -73,6 +76,27 @@ export class Characters extends Component {
       }
     }
   };
+
+  addCharacter = async (index) => {
+
+    const characterData = {
+      type: 'character',
+      email: this.props.auth0.user.email,
+      characterName: this.state.characters[index].name,
+      characterImg: this.state.characters[index].imageUrl,
+    }
+    try {
+      const SERVER = process.env.REACT_APP_SERVER;
+
+      await axios.post(`${SERVER}/post`, characterData)
+
+    } catch (error) {
+      console.error(error);
+    }
+
+  }
+
+
   render() {
     return (
       <div>
@@ -103,6 +127,7 @@ export class Characters extends Component {
             showModal={this.state.showModal}
             hideModal={this.hideCharModal}
             Char={this.state.ModalChar}
+            addCharacter={() => this.addCharacter(this.state.index)}
           />
         )}
         {this.state.showError && (
@@ -115,4 +140,4 @@ export class Characters extends Component {
   }
 }
 
-export default Characters;
+export default withAuth0(Characters);

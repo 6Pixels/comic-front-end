@@ -24,6 +24,25 @@ class Gallery extends Component {
       });
   };
 
+  addMovie = async (index) => {
+
+    const movieData = {
+      type: 'movie',
+      email: this.props.auth0.user.email,
+      movieName: this.state.movies[index].title,
+      movieImg: this.state.movies[index].image_url,
+    }
+    try {
+      const SERVER = process.env.REACT_APP_SERVER;
+
+      await axios.post(`${SERVER}/post`, movieData)
+
+    } catch (error) {
+      console.error(error);
+    }
+
+  }
+
   render() {
     const isAuthenticated = this.props.auth0.isAuthenticated;
     return (
@@ -37,7 +56,7 @@ class Gallery extends Component {
                   <Card.Title>{element.title}</Card.Title>
                   <Card.Title>{element.release_date}</Card.Title>
                   {isAuthenticated && (
-                    <Button variant="primary">Add to Fav</Button>
+                    <Button variant="primary" onClick={() => this.addMovie(index)}>Add to Fav</Button>
                   )}
                 </Card.Body>
               </Card>

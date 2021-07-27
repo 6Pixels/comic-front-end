@@ -35,7 +35,7 @@ export class Comics extends Component {
   searchItems = async (event) => {
     event.preventDefault();
     const string = event.target.item.value;
-    if (string == "") {
+    if (string === "") {
       this.componentDidMount();
     } else {
       try {
@@ -58,6 +58,27 @@ export class Comics extends Component {
     }
   };
 
+
+  addComic = async (index) => {
+
+    const comicData = {
+      type: 'comic',
+      email: this.props.auth0.user.email,
+      comicName: this.state.comics[index].name,
+      comicImg: this.state.comics[index].image_url,
+    }
+    try {
+      const SERVER = process.env.REACT_APP_SERVER;
+
+      await axios.post(`${SERVER}/post`, comicData)
+
+    } catch (error) {
+      console.error(error);
+    }
+
+  }
+
+
   render() {
     const isAuthenticated = this.props.auth0.isAuthenticated;
     return (
@@ -75,7 +96,7 @@ export class Comics extends Component {
                         <Card.Title>{element.name}</Card.Title>
                         {/* <Card.Title>{element.release_date}</Card.Title> */}
                         {isAuthenticated && (
-                          <Button variant="primary">Add to Fav</Button>
+                          <Button variant="primary" onClick={() => this.addComic(index)}>Add to Fav</Button>
                         )}
                       </Card.Body>
                     </Card>
