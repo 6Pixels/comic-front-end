@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Navbar, Container, Nav} from "react-bootstrap";
+import { Navbar, Container, Nav } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import LogInButton from "../SecondLayer/LogInButton";
@@ -8,7 +8,7 @@ import { withAuth0 } from "@auth0/auth0-react";
 
 class NavBar extends Component {
   render() {
-      const isAuthenticated = this.props.auth0.isAuthenticated;
+    const isAuthenticated = this.props.auth0.isAuthenticated;
     return (
       <div id="laith">
         <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
@@ -17,7 +17,7 @@ class NavBar extends Component {
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav">
               <Nav className="me-auto">
-                <Link to='/Home'>Home</Link>
+                <Link to='/'>Home</Link>
                 {/* <Nav.Link href="/Home">Home</Nav.Link> */}
                 <Link to='/Movies'>Movies</Link>
                 <Link to='/Comics'>Comics</Link>
@@ -30,8 +30,8 @@ class NavBar extends Component {
                 </NavDropdown> */}
               </Nav>
               <Nav>
-                { !isAuthenticated && <LogInButton />}
-                { isAuthenticated && <LogoutButton />}
+                {!isAuthenticated && <LogInButton />}
+                {isAuthenticated && <LogoutButton />}
                 <Link to='/Profile'>Profile</Link>
                 {/* <Nav.Link eventKey={2} href="/Profile">
                   Profile
@@ -40,7 +40,7 @@ class NavBar extends Component {
             </Navbar.Collapse>
           </Container>
         </Navbar>
-        
+
       </div>
     );
   }

@@ -19,8 +19,8 @@ export class CharModal extends Component {
               <Card.Img variant="top" src={this.props.Char.imageUrl} />
 
               <Card.Body>
-                <Card.Title>{this.props.Char.appearance.race}</Card.Title>                
-            
+                <Card.Title>{this.props.Char.appearance.race}</Card.Title>
+
                 <Card.Title>{this.props.Char.publisher}</Card.Title>
                 <Card.Title>{this.props.Char.aliases}</Card.Title>
                 {/* <Card.Text> {this.props.Char}</Card.Text> */}
@@ -36,7 +36,7 @@ export class CharModal extends Component {
               C L O S E
             </Button>
             <br />
-            {isAuthenticated && <Button variant="dark">Add To Favorite</Button>}
+            {isAuthenticated && <Button variant="dark" onClick={this.props.addCharacter}>Add To Favorite</Button>}
           </Modal.Body>
         </Modal.Dialog>
       </Modal>

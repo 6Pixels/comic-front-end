@@ -61,8 +61,27 @@ export class Characters extends Component {
       });
   };
 
+  addCharacter = async (index) => {
+
+    const characterData = {
+      type: 'character',
+      email: this.props.auth0.user.email,
+      characterName: this.state.characters[index].name,
+      characterImg: this.state.characters[index].imageUrl,
+    }
+    try {
+      const SERVER = process.env.REACT_APP_SERVER;
+
+      await axios.post(`${SERVER}/post`, characterData)
+
+    } catch (error) {
+      console.error(error);
+    }
+
+  }
+
+
   render() {
-    const isAuthenticated = this.props.auth0.isAuthenticated;
     return (
       <div>
         <SearchForm
@@ -91,6 +110,7 @@ export class Characters extends Component {
             hideModal={this.hideCharModal}
             index={this.state.index}
             Char={this.state.ModalChar}
+            addCharacter={() => this.addCharacter(this.state.index)}
           />
         )}
       </div>
