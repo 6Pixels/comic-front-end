@@ -1,12 +1,12 @@
 import React, { Component } from "react";
 import { Navbar, Container, Nav} from "react-bootstrap";
+import { withAuth0 } from "@auth0/auth0-react";
 import { Link } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import LogInButton from "../SecondLayer/LogInButton";
 import LogoutButton from "../SecondLayer/LogOutButton";
-import { withAuth0 } from "@auth0/auth0-react";
 
-class NavBar extends Component {
+class Header extends Component {
   render() {
       const isAuthenticated = this.props.auth0.isAuthenticated;
     return (
@@ -17,25 +17,15 @@ class NavBar extends Component {
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav">
               <Nav className="me-auto">
-                <Link to='/Home'>Home</Link>
-                {/* <Nav.Link href="/Home">Home</Nav.Link> */}
-                <Link to='/Movies'>Movies</Link>
-                <Link to='/Comics'>Comics</Link>
-                <Link to='/Characters'>Characters</Link>
-                {/* <Nav.Link href="/Gallery">Gallery</Nav.Link> */}
-                {/* <NavDropdown title="Dropdown" id="collasible-nav-dropdown">
-                  <NavDropdown.Item href="#action/3.1">Comics</NavDropdown.Item>
-                  <NavDropdown.Item href="#action/3.2">Movies</NavDropdown.Item>
-                  <NavDropdown.Item href="#action/3.3">News</NavDropdown.Item>
-                </NavDropdown> */}
+                <Link to='/Home' className='navLinks'>Home</Link>
+                <Link to='/Movies' className='navLinks'>Movies</Link>
+                <Link to='/Comics' className='navLinks'>Comics</Link>
+                <Link to='/Characters' className='navLinks'>Characters</Link>
               </Nav>
               <Nav>
                 { !isAuthenticated && <LogInButton />}
                 { isAuthenticated && <LogoutButton />}
-                <Link to='/Profile'>Profile</Link>
-                {/* <Nav.Link eventKey={2} href="/Profile">
-                  Profile
-                </Nav.Link> */}
+                <Link to='/Profile' className='navLinks'>Profile</Link>
               </Nav>
             </Navbar.Collapse>
           </Container>
@@ -46,4 +36,4 @@ class NavBar extends Component {
   }
 }
 
-export default withAuth0(NavBar);
+export default withAuth0(Header);

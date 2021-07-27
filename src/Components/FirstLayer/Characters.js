@@ -1,9 +1,8 @@
 import React, { Component } from "react";
 import axios from "axios";
-import { Card } from "react-bootstrap";
+import { Card, Alert } from "react-bootstrap";
 import CharModal from "../SecondLayer/CharModal";
 import SearchForm from "../SecondLayer/SearchForm";
-import { withAuth0 } from "@auth0/auth0-react";
 
 export class Characters extends Component {
   constructor(props) {
@@ -11,32 +10,37 @@ export class Characters extends Component {
     this.state = {
       characters: [],
       showModal: false,
-      index: 0,
       ModalChar: [],
+      searchKeyword: "",
+      showItems: true,
+      showError: false,
     };
   }
 
   componentDidMount = async () => {
-    axios
-      .get(`${process.env.REACT_APP_SERVER}/characters`)
-      .then((result) => {
-        // console.log(result.data)
-        this.setState({
-          characters: result.data,
+    try {
+      axios
+        .get(`${process.env.REACT_APP_SERVER}/characters`)
+        .then((result) => {
+          // console.log(result.data)
+          this.setState({
+            characters: result.data,
+          });
+        })
+        .catch((error) => {
+          console.log("Error : ", error);
         });
-      })
-      .catch((error) => {
-        console.log("Error : ", error);
-      });
+    } catch (error) {
+      console.log(error);
+    }
   };
+
   showCharModel = async (index) => {
     console.log(this.state.characters[index]);
     await this.setState({
       showModal: true,
-      index: index,
       ModalChar: this.state.characters[index],
     });
-    // console.log(this.state.ModalChar);
   };
   hideCharModal = () => {
     this.setState({
@@ -44,58 +48,71 @@ export class Characters extends Component {
     });
   };
 
-  searchItems = (event) => {
+  searchItems = async (event) => {
     event.preventDefault();
-    console.log("Char");
     const string = event.target.item.value;
-    axios
-      .get(`${process.env.REACT_APP_SERVER}/characters?characterName=${string}`)
-      .then((newData) => {
-        // console.log(newData.data);
+    if (string === "") {
+      this.componentDidMount();
+    } else {
+      try {
+        const newData = await axios.get(
+          `${process.env.REACT_APP_SERVER}/characters?characterName=${string}`
+        );
         this.setState({
           characters: newData.data,
+          searchKeyword: string,
         });
-      })
-      .catch((error) => {
-        console.log("error", error);
-      });
+      } catch (error) {
+        if (error) {
+          console.log();
+          this.setState({
+            showItems: false,
+            showError: true,
+          });
+        }
+      }
+    }
   };
-
   render() {
-    const isAuthenticated = this.props.auth0.isAuthenticated;
     return (
       <div>
         <SearchForm
           string="Search for Hero or villein"
           searchItems={this.searchItems}
         />
-        {this.state.characters.map((element, index) => {
-          return (
-            <div key={index} className="charactersCard">
-              <Card
-                style={{ width: "18rem" }}
-                onClick={() => this.showCharModel(index)}
-              >
-                <Card.Img variant="top" src={element.imageUrl} />
-                <Card.Body>
-                  <Card.Title>{element.name}</Card.Title>
-                  {/* <Card.Text>{element.powerstats.power}</Card.Text> */}
-                </Card.Body>
-              </Card>
-            </div>
-          );
-        })}
+        <div className="itemsContainer">
+          {this.state.showItems &&
+            this.state.characters.map((element, index) => {
+              return (
+                <div key={index} className="charactersCard">
+                  <Card
+                    className="ItemCards"
+                    onClick={() => this.showCharModel(index)}
+                  >
+                    <Card.Img variant="top" src={element.imageUrl} />
+                    <Card.Body>
+                      <Card.Title>{element.name}</Card.Title>
+                    </Card.Body>
+                  </Card>
+                </div>
+              );
+            })}
+        </div>
         {this.state.showModal && (
           <CharModal
             showModal={this.state.showModal}
             hideModal={this.hideCharModal}
-            index={this.state.index}
             Char={this.state.ModalChar}
           />
+        )}
+        {this.state.showError && (
+          <Alert variant="danger" className="DataErrorAlert">
+            There are no results for '{this.state.searchKeyword}' keyword
+          </Alert>
         )}
       </div>
     );
   }
 }
 
-export default withAuth0(Characters);
+export default Characters;
