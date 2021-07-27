@@ -7,7 +7,7 @@ function LogoutButton() {
 
   return (
     <Button onClick={logout} variant="danger">
-      logout
+      Log-Out
     </Button>
   );
 }

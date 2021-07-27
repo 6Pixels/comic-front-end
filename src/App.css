@@ -1,23 +1,33 @@
 /* Body */
-#bodyContainer{background-color: gray;}
+#bodyContainer{background-color: rgba(231, 227, 227, 0.877);}
 
 /* Nav Bar css */
 #navbackground {
     width: 100%;
     height: 600px;
-    background-image: url('https://img.wallpapersafari.com/desktop/1920/1080/32/43/gKaZ0H.jpg');
+    /* background-image: url('https://img.wallpapersafari.com/desktop/1920/1080/32/43/gKaZ0H.jpg'); */
     background-size: cover;
 }
-.navLinks{text-decoration: none; color: white;}
+.navLinks{text-decoration: none; color: white;
+;}
+
+
+.ProfileHover :hover{
+color: rgb(0, 0, 0);}
+
+.me-auto :hover{
+color: rgb(0, 0, 0);}
 
 /* Footer Css */
 #footer {
     width: 100%;
     height: 100px;
-    background-image: url('https://files.slack.com/files-pri/TNGRRLUMA-F029HT6C16Y/galaxy-header-4.jpg');
+    /* background-image: url('https://files.slack.com/files-pri/TNGRRLUMA-F029HT6C16Y/galaxy-header-4.jpg'); */
     background-size: cover;
-    position: fixed;
-    bottom: 0px;
+    /* position: relative; */
+    /* bottom: 0px; */
+    /* background-color :#012A6B */
+    background-color:#5c0404;
 }
 
 /* Movies Css */
@@ -51,11 +61,26 @@
 #searchForm{width: 50%;margin-left: 300px;}
 .searchFormContent{display: inline-block;margin-left: 10px;}
 
-#laith {
+#laith  {
     margin-bottom: 10em;
+    background-color: #5c0404;
+    font-family: fantasy;
+    
+    
+    /* letter-spacing: 1px; */
+}
+/* .navLinks :hover{
+    background-color: red;
+
+} */
+#title{
+    color:white;
+    font-size: 35px;
+    letter-spacing: 1px;
 }
 
 a {
     text-decoration: none;
     margin: 15px;
 }
+
