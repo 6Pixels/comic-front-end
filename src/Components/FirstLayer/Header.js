@@ -11,9 +11,9 @@ class Header extends Component {
     const isAuthenticated = this.props.auth0.isAuthenticated;
     return (
       <div id="laith">
-        <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+        <Navbar collapseOnSelect >
           <Container>
-            <Navbar.Brand>Comics Pixels</Navbar.Brand>
+            <Navbar.Brand id='title'>Comic Pixels</Navbar.Brand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav">
               <Nav className="me-auto">
@@ -22,7 +22,7 @@ class Header extends Component {
                 <Link to='/Comics' className='navLinks'>Comics</Link>
                 <Link to='/Characters' className='navLinks'>Characters</Link>
               </Nav>
-              <Nav>
+              <Nav className='ProfileHover'>
                 {!isAuthenticated && <LogInButton />}
                 {isAuthenticated && <LogoutButton />}
                 <Link to='/Profile' className='navLinks'>Profile</Link>
