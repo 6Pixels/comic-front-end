@@ -9,6 +9,8 @@ export class Comics extends Component {
     super(props);
     this.state = {
       comics: [],
+      showComics : true,
+      showError : false
     };
   }
 
@@ -25,24 +27,37 @@ export class Comics extends Component {
       });
   };
 
+  callLog =() => {
+    console.log('dddddddd')
+  }
+
   searchItems = (event) => {
     event.preventDefault();
     const string = event.target.item.value;
-    axios
+    try{ axios
       .get(`${process.env.REACT_APP_SERVER}/comic?comicName=${string}`)
       .then((newData) => {
         this.setState({
           comics: newData.data,
         });
+
       })
       .catch((error) => {
         console.log("error", error);
-      });
+      })}catch (error){
+       this.callLog();
+        this.setState({
+          showComics:false,
+          showError :true
+        })
+      }
   };
 
   render() {
     const isAuthenticated = this.props.auth0.isAuthenticated;
     return (
+      <>
+      {this.state.showComics && 
       <div>
         <SearchForm string="search for comics" searchItems={this.searchItems} />
         {this.state.comics.map((element, index) => {
@@ -62,6 +77,9 @@ export class Comics extends Component {
           );
         })}
       </div>
+      }
+      {this.state.showError && <h2>error</h2>}
+      </>
     );
   }
 }

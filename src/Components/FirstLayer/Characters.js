@@ -26,7 +26,7 @@ export class Characters extends Component {
         });
       })
       .catch((error) => {
-        console.log("Error : ", error);
+        console.log("Error : " , error);
       });
   };
   showCharModel = async (index) => {
