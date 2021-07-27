@@ -46,11 +46,11 @@ class Gallery extends Component {
   render() {
     const isAuthenticated = this.props.auth0.isAuthenticated;
     return (
-      <div>
+      <div className="itemsContainer">
         {this.state.movies.map((element, index) => {
           return (
             <div key={index} className="movieCard">
-              <Card style={{ width: "18rem" }}>
+              <Card className="ItemCards">
                 <Card.Img variant="top" src={element.image_url} />
                 <Card.Body>
                   <Card.Title>{element.title}</Card.Title>

@@ -1,48 +1,55 @@
-/* Nav Bar css */
+/* Body */
+#bodyContainer{background-color: gray;}
 
+/* Nav Bar css */
 #navbackground {
     width: 100%;
     height: 600px;
     background-image: url('https://img.wallpapersafari.com/desktop/1920/1080/32/43/gKaZ0H.jpg');
     background-size: cover;
 }
+.navLinks{text-decoration: none; color: white;}
 
 /* Footer Css */
-
 #footer {
     width: 100%;
-    height: 300px;
-    background-image: url('https://i5.walmartimages.com/asr/9f50998d-26bf-4120-b405-09a067437245_1.3eb3876d442c191da2503ce29ad1f736.jpeg');
+    height: 100px;
+    background-image: url('https://files.slack.com/files-pri/TNGRRLUMA-F029HT6C16Y/galaxy-header-4.jpg');
     background-size: cover;
+    position: fixed;
+    bottom: 0px;
 }
 
 /* Movies Css */
-
 .movieCard {
     display: inline-block;
     margin: 12px;
 }
 
 /* comic Css */
-
 .comicCard {
     display: inline-block;
     margin: 12px;
 }
 
 /* characters Css */
+.charactersCard {display: inline-block;margin: 12px;}
+.itemsContainer{margin: 0px 100px;border: 1px solid gray;}
+.ItemCards{width: 150px;}
+.charModal{width: 1000px; border: 1px solid red;}
+    /* Charts */
+.ModalCharImg{width: 220px; margin-left: 10px;}
+.powersChart{width: 90px; height: 90px;margin: 10px;}/* powers Chart at PowerChart file*/
+#allChartsContainer{position: absolute; top: 80px; right: 90px;}
+    /* Table */
+.apperanceTable{width: 220px; margin: 10px;}
 
-.charactersCard {
-    display: inline-block;
-    margin: 12px;
-}
+    /* Error Alert */
+.DataErrorAlert{width: 50%;margin-left: 300px;}
 
 /* Seacrch Form Css */
-
-#searchForm {
-    width: 50%;
-    margin: 30px 300px;
-}
+#searchForm{width: 50%;margin-left: 300px;}
+.searchFormContent{display: inline-block;margin-left: 10px;}
 
 #laith {
     margin-bottom: 10em;

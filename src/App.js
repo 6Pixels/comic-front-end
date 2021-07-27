@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.css";
-import NavBar from "./Components/FirstLayer/NavBar";
+import Header from "./Components/FirstLayer/Header";
 import Footer from "./Components/FirstLayer/Footer";
 import Movies from "./Components/FirstLayer/Movies";
 import Comics from "./Components/FirstLayer/Comics";
@@ -17,9 +17,9 @@ import Home from "./Components/FirstLayer/Home";
 class App extends React.Component {
   render() {
     return (
-      <>
+      <div id="bodyContainer">
         <Router>
-          <NavBar />
+          <Header />
           <Switch>
             {/* Home Page */}
             <Route exact path="/">
@@ -44,9 +44,9 @@ class App extends React.Component {
               <Characters />
             </Route>
           </Switch>
-          <Footer />
+          <Footer id="footer" />
         </Router>
-      </>
+      </div>
     );
   }
 }
