@@ -3,6 +3,7 @@ import axios from "axios";
 import { Card, Alert } from "react-bootstrap";
 import CharModal from "../SecondLayer/CharModal";
 import SearchForm from "../SecondLayer/SearchForm";
+import { withAuth0 } from "@auth0/auth0-react";
 
 export class Characters extends Component {
   constructor(props) {
@@ -14,6 +15,7 @@ export class Characters extends Component {
       searchKeyword: "",
       showItems: true,
       showError: false,
+      index: 0,
     };
   }
 
@@ -39,6 +41,7 @@ export class Characters extends Component {
     console.log(this.state.characters[index]);
     await this.setState({
       showModal: true,
+      index: index,
       ModalChar: this.state.characters[index],
     });
   };
@@ -137,4 +140,4 @@ export class Characters extends Component {
   }
 }
 
-export default Characters;
+export default withAuth0(Characters);
