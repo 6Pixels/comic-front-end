@@ -32,7 +32,7 @@ const Laith = (props) => {
 
   return (
     <>
-    <Parallax image={require("../assets/img/hero.jpg").default}>
+    <Parallax image={require("../assets/img/19681.jpg").default}>
         <div className={classes.container}>
           <GridContainer>
             <GridItem>

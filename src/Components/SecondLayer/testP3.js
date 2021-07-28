@@ -10,7 +10,7 @@ const useStyles = makeStyles(styles);
 
 
 
-const Moimage = (props) => {
+const Comimage = (props) => {
   
   const classes = useStyles();
   const imageClasses = classNames(
@@ -26,12 +26,13 @@ const Moimage = (props) => {
 
   return (
     <>
-    <Parallax image={require("../assets/img/movee.jpg").default}>
+    <Parallax image={require("../assets/img/comiccc.jpeg").default}>
         <div className={classes.container}>
           <GridContainer>
             <GridItem>
               <div className={classes.brand}>
-                <h1 id='asd' className={classes.title}>You're never alone with a movie.</h1>
+                <h1 id='com' > Super Comics is almost here
+</h1>
                
                 
               </div>
@@ -43,4 +44,4 @@ const Moimage = (props) => {
   );
 };
 
-export default Moimage;
+export default Comimage;

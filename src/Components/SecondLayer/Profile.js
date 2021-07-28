@@ -32,7 +32,7 @@ const Profile = (props) => {
 
   return (
     <>
-    <Parallax image={require("../assets/img/bg4.jpg").default}>
+    <Parallax id="prof" image={require("../assets/img/bg44.jpg").default}>
         <div className={classes.container}>
           <GridContainer>
             <GridItem>
@@ -89,8 +89,9 @@ const Profile = (props) => {
                           src={val.img}
                           className={navImageClasses}
                         />
-                        <p>{val.name}</p>
-                        <Button variant="outline-danger" onClick={() => props.delete(val._id, 'character')}>Delete Character</Button>
+                        
+                        <h6 className="title22">{val.name}</h6>
+                        <Button  variant="danger" onClick={() => props.delete(val._id, 'character')}>Delete Character</Button>
                         <Button variant="outline-warning" onClick={() => props.updateModel(val._id, 'character')}>Update Character</Button>
                       </GridItem>
                       )
