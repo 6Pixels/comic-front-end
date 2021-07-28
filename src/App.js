@@ -9,10 +9,9 @@ import { BrowserRouter as Router, Switch, Route, Redirect } from "react-router-d
 import { withAuth0 } from "@auth0/auth0-react";
 import Login from './Login';
 import Profile from "./Components/FirstLayer/Profile";
-import Home from "./Components/FirstLayer/Home";
+import "antd/dist/antd.css";
 
-
-
+import Router1 from "./router";
 
 class App extends React.Component {
   render() {
@@ -23,7 +22,7 @@ class App extends React.Component {
           <Switch>
             {/* Home Page */}
             <Route exact path="/">
-              <Home />
+              <Router1 />
             </Route>
             {/* Profile Page */}
             <Route exact path="/Profile">
