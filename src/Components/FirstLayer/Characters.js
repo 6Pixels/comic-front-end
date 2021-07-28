@@ -4,7 +4,7 @@ import { Card, Alert } from "react-bootstrap";
 import CharModal from "../SecondLayer/CharModal";
 import SearchForm from "../SecondLayer/SearchForm";
 import { withAuth0 } from "@auth0/auth0-react";
-
+import BackL from "../SecondLayer/testP"
 export class Characters extends Component {
   constructor(props) {
     super(props);
@@ -100,6 +100,10 @@ export class Characters extends Component {
   render() {
     return (
       <div>
+        <div id="char">
+
+        <BackL/>
+        </div>
         <SearchForm
           string="Search for Hero or villein"
           searchItems={this.searchItems}

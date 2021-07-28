@@ -27,7 +27,8 @@ color: rgb(0, 0, 0);}
     /* position: relative; */
     /* bottom: 0px; */
     /* background-color :#012A6B */
-    background-color:#5c0404;
+    /* background-color:#5c0404; */
+    background-color: black;
 }
 
 /* Movies Css */
@@ -62,8 +63,8 @@ color: rgb(0, 0, 0);}
 .searchFormContent{display: inline-block;margin-left: 10px;}
 
 #laith  {
-    margin-bottom: 10em;
-    background-color: #5c0404;
+    margin-bottom: 0;
+    background-color: black;
     font-family: fantasy;
     
     
@@ -84,3 +85,45 @@ a {
     margin: 15px;
 }
 
+#navbackground{
+    height:auto ;
+}
+/* .makeStyles-imgGallery-73{
+} */
+
+#h33{
+    color: #035eb299;
+}
+
+#cardLog{
+    margin-left: 23%;
+    background-image: url('./Components/assets/img/looo.jpg');
+}
+.log{
+    height: 500px;
+    padding-top: 5%;
+    padding-left: 28%;
+    padding-right: 50%;
+    background-position: center;
+
+    background-repeat: no-repeat;
+    background-image: url("./Components/assets/img/login.jpg")
+} 
+#cardT,#cardT2 {
+    color: white;
+    
+}
+#char,#sss{
+    margin-bottom: 350px;
+   
+}
+#ss{
+    position: relative;
+z-index: 20000;
+}
+#asd{
+    color: #e7311fde;
+    text-align: center;
+    font-size: 15em;
+
+}

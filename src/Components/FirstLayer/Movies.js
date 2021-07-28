@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import axios from "axios";
 import { Card, Button } from "react-bootstrap";
 import { withAuth0 } from "@auth0/auth0-react";
-
+import Back from "../SecondLayer/testP2"
 class Gallery extends Component {
   constructor(props) {
     super(props);
@@ -46,6 +46,10 @@ class Gallery extends Component {
   render() {
     const isAuthenticated = this.props.auth0.isAuthenticated;
     return (
+      <>
+      <div id="sss">
+      <Back/>
+      </div>
       <div className="itemsContainer">
         {this.state.movies.map((element, index) => {
           return (
@@ -64,6 +68,7 @@ class Gallery extends Component {
           );
         })}
       </div>
+      </>
     );
   }
 }
