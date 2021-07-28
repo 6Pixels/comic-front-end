@@ -1,0 +1,16 @@
+{
+  "title": "Comic Pixels",
+  "text": "Is used to express movies, comics and characters. combined with search for your favorites movies, favorites comics and favorites characters. It typically takes the form of a sequence of panels of images.",
+  "section": [
+    {
+      "title": "Hero",
+      "content": "Pick you favorite Hero.",
+      "icon": "clipart310940.png"
+    },
+    {
+      "title": "Villain",
+      "content": "Pick you favorite Villain.",
+      "icon": "clipart4319840.png"
+    }
+  ]
+}
