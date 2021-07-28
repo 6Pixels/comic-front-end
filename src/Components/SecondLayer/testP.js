@@ -28,24 +28,26 @@ const Laith = (props) => {
     classes.imgRounded,
     classes.imgGallery);
 
-  console.log("dataaaaaaaaaaaaaaa", props);
+
 
   return (
-    <>
-    <Parallax image={require("../assets/img/hero.jpg").default}>
-        <div className={classes.container}>
-          <GridContainer>
-            <GridItem>
-              <div className={classes.brand}>
-                <h1 className={classes.title}>It's Time To Be Hero.</h1>
+   
+  <div></div>
+  //   <>
+  //   <Parallax image={require("../assets/img/hero.jpg").default}>
+  //       <div className={classes.container}>
+  //         <GridContainer>
+  //           <GridItem>
+  //             <div className={classes.brand}>
+  //               <h1 className={classes.title}>It's Time To Be Hero.</h1>
                
                 
-              </div>
-            </GridItem>
-          </GridContainer>
-          </div>
-      </Parallax>
-    </>
+  //             </div>
+  //           </GridItem>
+  //         </GridContainer>
+  //         </div>
+  //     </Parallax> 
+  //   </>
   );
 };
 
