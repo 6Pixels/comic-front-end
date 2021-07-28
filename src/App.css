@@ -27,8 +27,6 @@
   color: rgb(230, 230, 150);
 }
 
-
-
 /* Footer Css */
 #footer {
   width: 100%;
@@ -44,61 +42,51 @@
 
 /* Movies Css */
 .movieCard {
-
   display: inline-block;
   color: rgb(0, 0, 0);
   cursor: pointer;
-  padding: 15px; 
-font-family: fantasy; 
+  padding: 15px;
+  font-family: fantasy;
 }
 
 /* comic Css */
 .comicCard {
-
   display: inline-block;
   color: rgb(0, 0, 0);
   cursor: pointer;
-  padding: 15px; 
-font-family: fantasy; 
+  padding: 15px;
+  font-family: fantasy;
 }
 
-#comicsimg{
+#comicsimg {
   /* background-image: url('https://cdn.wallpapersafari.com/74/0/zx21V7.jpg'); */
   width: 100%;
   background-size: cover;
   height: 300px;
   font-size: 8em;
-  
-
-
 }
 #comicsimg p {
-  color:rgb(229 88 42);
-left: 90px;
-top: 220px;
-font-family: fantasy;
-position: absolute
-;
-
-
+  color: rgb(229 88 42);
+  left: 90px;
+  top: 220px;
+  font-family: fantasy;
+  position: absolute;
 }
 /* characters Css */
-.charactersCard{
+.charactersCard {
   display: inline-block;
   color: rgb(0, 0, 0);
   cursor: pointer;
-  padding: 15px; 
-font-family: fantasy; 
+  padding: 15px;
+  font-family: fantasy;
 }
 .itemsContainer {
   margin: 0px 100px;
   /* border: 1px solid gray; */
 }
 .ItemCards {
-  
   width: 155px;
   cursor: pointer;
-
 }
 .charModal {
   width: 1000px;
@@ -149,9 +137,8 @@ font-family: fantasy;
   /* letter-spacing: 1px; */
 }
 
-.navLinks :hover{
-    background-color: red;
-
+.navLinks :hover {
+  background-color: red;
 }
 #title {
   color: white;
@@ -200,23 +187,18 @@ a {
 }
 #char,
 #sss {
-
   margin-bottom: 50px;
-
 }
 #ss {
   position: relative;
   /* z-index: 20000; */
-margin-top: 50px;
-
+  margin-top: 50px;
 }
 #asd {
-
   color: rgba(239, 241, 236, 0.972);
   text-align: center;
   font-size: 5em;
   background-color: rgba(0, 0, 0, 0.644);
-
 }
 
 /*slider*/
@@ -438,18 +420,18 @@ margin-top: 50px;
   border: solid red;
   height: 25vh;
 } */
-#prof{
+#prof {
   height: 55vh;
   border: solid red;
 }
 
-.title22{
+.title22 {
   font-size: 40px;
   font-weight: bold;
   color: #fff900;
-  font-family: 'Black Ops One', cursive;
+  font-family: "Black Ops One", cursive;
 }
-#com{
+#com {
   /* margin-left: -80px; */
   float: right;
   text-align: left;
@@ -458,4 +440,11 @@ margin-top: 50px;
   margin-top: 250px;
   opacity: 0.9;
   background-color: rgba(0, 0, 0, 0.445);
+}
+#homebody {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+  background-image: url("./Components/assets/img/img.jpg");
 }

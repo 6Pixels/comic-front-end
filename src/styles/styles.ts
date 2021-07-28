@@ -29,7 +29,7 @@ export const Styles = createGlobalStyle`
         outline: 0;
         background: #fff;
         overflow-x: hidden;
-        background-image: url("./Components/assets/img/GALAXY-HEADER-4.jpg");
+        background-image: url("./Components/assets/img/img.jpg");
 
     }
 

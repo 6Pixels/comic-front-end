@@ -32,121 +32,121 @@ const Profile = (props) => {
 
   return (
     <>
-    <Parallax id="prof" image={require("../assets/img/bg44.jpg").default}>
+      <Parallax id="prof" image={require("../assets/img/bg44.jpg").default}>
         <div className={classes.container}>
           <GridContainer>
             <GridItem>
               <div className={classes.brand}>
                 <h1 className={classes.title}>Welcome To Your Comic World.</h1>
                 <h3 id='h33' className={classes.subtitle}>
-                 Here You Will Find Your Favourite Topic.
+                  Here You Will Find Your Favourite Topic.
                 </h3>
               </div>
             </GridItem>
           </GridContainer>
         </div>
       </Parallax>
-    {/* <img src={Background} className='img-fluid shadow-4' alt='...' /> */}
-    <div  >
-      <GridContainer  justify="center">
-        <GridItem  xs={12} sm={12} md={6}>
-          <div className={classes.profile}>
-            <div>
-              <img src={user.picture} alt="..." className={imageClasses} />
+      {/* <img src={Background} className='img-fluid shadow-4' alt='...' /> */}
+      <div  >
+        <GridContainer justify="center">
+          <GridItem xs={12} sm={12} md={6}>
+            <div className={classes.profile}>
+              <div>
+                <img src={user.picture} alt="..." className={imageClasses} />
+              </div>
+              <div className={classes.name}>
+                <h3 className={classes.title}>{user.name}</h3>
+                {/* <h6>DESIGNER</h6> */}
+                <Button justIcon link className={classes.margin5}>
+                  <i className={"fab fa-twitter"} style={{ color: '#fff900' }} />
+                </Button>
+                <Button justIcon link className={classes.margin5}>
+                  <i className={"fab fa-instagram"} style={{ color: '#fff900' }} />
+                </Button>
+                <Button justIcon link className={classes.margin5}>
+                  <i className={"fab fa-facebook"} style={{ color: '#fff900' }} />
+                </Button>
+              </div>
             </div>
-            <div className={classes.name}>
-              <h3 className={classes.title}>{user.name}</h3>
-              {/* <h6>DESIGNER</h6> */}
-              <Button justIcon link className={classes.margin5}>
-                <i className={"fab fa-twitter"} />
-              </Button>
-              <Button justIcon link className={classes.margin5}>
-                <i className={"fab fa-instagram"} />
-              </Button>
-              <Button justIcon link className={classes.margin5}>
-                <i className={"fab fa-facebook"} />
-              </Button>
-            </div>
-          </div>
-        </GridItem>
-      </GridContainer>
+          </GridItem>
+        </GridContainer>
 
-      <GridContainer justify="center">
-        <GridItem id="pic" xs={12} sm={12} md={8} className={classes.navWrapper}>
-          <NavPills 
-            alignCenter
-            color="primary"
-            tabs={[
-              {
-                tabButton: "Characters",
-                tabIcon: Characters,
-                tabContent: (
-                  <GridContainer justify="center">
-                    {props.profileData.characters.map(val => {
-                      return (<GridItem xs={12} sm={12} md={4}>
-                        <img
-                          alt="..."
-                          src={val.img}
-                          className={navImageClasses}
-                        />
-                        
-                        <h6 className="title22">{val.name}</h6>
-                        <Button  variant="danger" onClick={() => props.delete(val._id, 'character')}>Delete Character</Button>
-                        <Button variant="outline-warning" onClick={() => props.updateModel(val._id, 'character')}>Update Character</Button>
-                      </GridItem>
-                      )
-                    })}
-                  </GridContainer>
-                ),
-              },
-              {
-                tabButton: "Comics",
-                tabIcon: Comics,
-                tabContent: (
-                  <GridContainer justify="center">
+        <GridContainer justify="center">
+          <GridItem id="pic" xs={12} sm={12} md={8} className={classes.navWrapper}>
+            <NavPills
+              alignCenter
+              color="primary"
+              tabs={[
+                {
+                  tabButton: "Characters",
+                  tabIcon: Characters,
+                  tabContent: (
+                    <GridContainer justify="center">
+                      {props.profileData.characters.map(val => {
+                        return (<GridItem xs={12} sm={12} md={4}>
+                          <img
+                            alt="..."
+                            src={val.img}
+                            className={navImageClasses}
+                          />
 
-                    {props.profileData.comic.map(val => {
-                      return (<GridItem xs={12} sm={12} md={4}>
-                        <img
-                          alt="..."
-                          src={val.img}
-                          className={navImageClasses}
-                        />
-                        <p>{val.name}</p>
-                        <Button variant="outline-danger" onClick={() => props.delete(val._id, 'comic')}>Delete Comic</Button>
-                        <Button variant="outline-warning" onClick={() => props.updateModel(val._id, 'comic')}>Update Comic</Button>
-                      </GridItem>
-                      )
-                    })}
-                  </GridContainer>
-                ),
-              },
-              {
-                tabButton: "Movies",
-                tabIcon: Movies,
-                tabContent: (
-                  <GridContainer justify="center">
-                    {props.profileData.movies.map(val => {
-                      return (<GridItem xs={12} sm={12} md={4}>
-                        <img
-                          alt="..."
-                          src={val.img}
-                          className={navImageClasses}
-                        />
-                        <p>{val.name}</p>
+                          <h6 className="title22">{val.name}</h6>
+                          <Button variant="danger" onClick={() => props.delete(val._id, 'character')}>Delete Character</Button>
+                          <Button variant="outline-warning" onClick={() => props.updateModel(val._id, 'character')}>Update Character</Button>
+                        </GridItem>
+                        )
+                      })}
+                    </GridContainer>
+                  ),
+                },
+                {
+                  tabButton: "Comics",
+                  tabIcon: Comics,
+                  tabContent: (
+                    <GridContainer justify="center">
 
-                        <Button variant="outline-danger" onClick={() => props.delete(val._id, 'movie')}>Delete Movie</Button>
-                        <Button variant="outline-warning" onClick={() => props.updateModel(val._id, 'movie')}>Update Movie</Button>
-                      </GridItem>
-                      )
-                    })}
-                  </GridContainer>
-                ),
-              },
-            ]}
-          />
-        </GridItem>
-      </GridContainer>
+                      {props.profileData.comic.map(val => {
+                        return (<GridItem xs={12} sm={12} md={4}>
+                          <img
+                            alt="..."
+                            src={val.img}
+                            className={navImageClasses}
+                          />
+                          <h6 className="title22">{val.name}</h6>
+                          <Button variant="outline-danger" onClick={() => props.delete(val._id, 'comic')}>Delete Comic</Button>
+                          <Button variant="outline-warning" onClick={() => props.updateModel(val._id, 'comic')}>Update Comic</Button>
+                        </GridItem>
+                        )
+                      })}
+                    </GridContainer>
+                  ),
+                },
+                {
+                  tabButton: "Movies",
+                  tabIcon: Movies,
+                  tabContent: (
+                    <GridContainer justify="center">
+                      {props.profileData.movies.map(val => {
+                        return (<GridItem xs={12} sm={12} md={4}>
+                          <img
+                            alt="..."
+                            src={val.img}
+                            className={navImageClasses}
+                          />
+                          <h6 className="title22">{val.name}</h6>
+
+                          <Button variant="outline-danger" onClick={() => props.delete(val._id, 'movie')}>Delete Movie</Button>
+                          <Button variant="outline-warning" onClick={() => props.updateModel(val._id, 'movie')}>Update Movie</Button>
+                        </GridItem>
+                        )
+                      })}
+                    </GridContainer>
+                  ),
+                },
+              ]}
+            />
+          </GridItem>
+        </GridContainer>
       </div>
     </>
   );

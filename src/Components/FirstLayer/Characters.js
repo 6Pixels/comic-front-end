@@ -5,6 +5,7 @@ import CharModal from "../SecondLayer/CharModal";
 import SearchForm from "../SecondLayer/SearchForm";
 import { withAuth0 } from "@auth0/auth0-react";
 import BackL from "../SecondLayer/testP"
+
 export class Characters extends Component {
   constructor(props) {
     super(props);
@@ -99,17 +100,19 @@ export class Characters extends Component {
 
   render() {
     return (
+
       <div>
-          <SearchForm
-        className='searchForm'
+        <div id="char">
+
+          <BackL />
+
+        </div>
+        <SearchForm
+          className='searchForm'
           string="Search for Hero or villain"
           searchItems={this.searchItems}
         />
-        {/* <div id="char"> */}
-{/* 
-        <BackL/> */}
-       
-      
+
         <div className="itemsContainer">
           {this.state.showItems &&
             this.state.characters.map((element, index) => {

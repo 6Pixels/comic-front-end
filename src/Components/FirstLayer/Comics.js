@@ -3,7 +3,8 @@ import axios from "axios";
 import { Card, Button, Alert } from "react-bootstrap";
 import { withAuth0 } from "@auth0/auth0-react";
 import SearchForm from "../SecondLayer/SearchForm";
-import Back from "../SecondLayer/testP3"
+import Back from "../SecondLayer/testP3";
+
 export class Comics extends Component {
   constructor(props) {
     super(props);
@@ -84,8 +85,8 @@ export class Comics extends Component {
     return (
       <>
 
-      <Back />
-        
+        <Back />
+
         <SearchForm className='searchForm' string="search for comics" searchItems={this.searchItems} />
 
         {this.state.showItems && (

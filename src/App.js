@@ -22,8 +22,13 @@ class App extends React.Component {
           <Switch>
             {/* Home Page */}
             <Route exact path="/">
-              <Slider />
-              <Router1 />
+              <div id="homebody">
+                <Slider />
+
+                <Router1 />
+              </div>
+
+
             </Route>
             {/* Profile Page */}
             <Route exact path="/Profile">

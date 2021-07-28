@@ -11,7 +11,7 @@ const useStyles = makeStyles(styles);
 
 
 const Comimage = (props) => {
-  
+
   const classes = useStyles();
   const imageClasses = classNames(
     classes.imgRaised,
@@ -26,19 +26,16 @@ const Comimage = (props) => {
 
   return (
     <>
-    <Parallax image={require("../assets/img/comiccc.jpeg").default}>
+      <Parallax image={require("../assets/img/comiccc.jpeg").default}>
         <div className={classes.container}>
           <GridContainer>
             <GridItem>
               <div className={classes.brand}>
-                <h1 id='com' > Super Comics is almost here
-</h1>
-               
-                
+                <h1 id='com' > Super Comics is almost here</h1>
               </div>
             </GridItem>
           </GridContainer>
-          </div>
+        </div>
       </Parallax>
     </>
   );
