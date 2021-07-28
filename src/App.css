@@ -200,9 +200,8 @@ a {
 }
 #char,
 #sss {
-  margin-bottom: 350px;
-  text-align: right;
-  background-image: cover;
+
+  margin-bottom: 50px;
 
 }
 #ss {
@@ -212,13 +211,12 @@ margin-top: 50px;
 
 }
 #asd {
-  /* color: #e7311fde; */
-  color:black;
-  position: relative;
-left: 85px;
 
-  font-family: fantasy;
-  font-size: 8em;
+  color: rgba(239, 241, 236, 0.972);
+  text-align: center;
+  font-size: 5em;
+  background-color: rgba(0, 0, 0, 0.644);
+
 }
 
 /*slider*/
@@ -435,4 +433,29 @@ left: 85px;
 
 .sliderheader {
   padding-bottom: 40%;
+}
+/* .makeStyles-parallax-230 {
+  border: solid red;
+  height: 25vh;
+} */
+#prof{
+  height: 55vh;
+  border: solid red;
+}
+
+.title22{
+  font-size: 40px;
+  font-weight: bold;
+  color: #fff900;
+  font-family: 'Black Ops One', cursive;
+}
+#com{
+  /* margin-left: -80px; */
+  float: right;
+  text-align: left;
+  color: white;
+  margin-right: -100px;
+  margin-top: 250px;
+  opacity: 0.9;
+  background-color: rgba(0, 0, 0, 0.445);
 }
