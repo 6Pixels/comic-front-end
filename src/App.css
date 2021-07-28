@@ -139,22 +139,28 @@ a {
 }
 
 #cardLog {
-  margin-left: 23%;
-  background-image: url("./Components/assets/img/looo.jpg");
+  /* margin-left: 1500px; */
+  background-image: url("./Components/assets/img/2660432.png");
 }
-.log {
-  height: 500px;
-  padding-top: 5%;
-  padding-left: 28%;
-  padding-right: 50%;
-  background-position: center;
 
+.log {
+  height: 1000px;
+  padding-top: 15%;
+  background-position: center;
   background-repeat: no-repeat;
-  background-image: url("./Components/assets/img/login.jpg");
+  background-image: url("./Components/assets/img/superheroes.jpg");
 }
-#cardT,
+#cardT {
+  font-family: "Black Ops One", cursive;
+  padding-top: 50px;
+  color: #fff900;
+  /* font-family: fantasy; */
+}
 #cardT2 {
+  padding-top: 15px;
+  padding-bottom: 15px;
   color: white;
+  font-family: "Bungee Inline", cursive;
 }
 #char,
 #sss {
@@ -168,4 +174,12 @@ a {
   color: #e7311fde;
   text-align: center;
   font-size: 15em;
+}
+
+/*slider*/
+
+#tariq {
+  margin: auto;
+
+  width: 75%;
 }

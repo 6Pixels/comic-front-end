@@ -10,7 +10,7 @@ import { withAuth0 } from "@auth0/auth0-react";
 import Login from './Login';
 import Profile from "./Components/FirstLayer/Profile";
 import "antd/dist/antd.css";
-
+import Slider from "./pages/Slider/Slider";
 import Router1 from "./router";
 
 class App extends React.Component {
@@ -22,6 +22,7 @@ class App extends React.Component {
           <Switch>
             {/* Home Page */}
             <Route exact path="/">
+              <Slider />
               <Router1 />
             </Route>
             {/* Profile Page */}
