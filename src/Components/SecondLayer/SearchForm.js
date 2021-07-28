@@ -4,7 +4,7 @@ import { Form, Button } from "react-bootstrap";
 export class SearchForm extends Component {
   render() {
     return (
-      <div>
+      <div id='ss'>
         <Form onSubmit={this.props.searchItems}>
           <Form.Group className="mb-3" controlId="formBasicEmail">
             <div className='searchFormContent' id='searchForm'>

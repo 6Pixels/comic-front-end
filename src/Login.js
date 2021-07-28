@@ -7,15 +7,18 @@ import LoginButton from './Components/SecondLayer/LogInButton';
 class Login extends React.Component {
   render() {
     return (
-      <Card style={{ width: '18rem' }}>
+      <div className='log'>
+
+      <Card id="cardLog" style={{ width: '15rem' }}>
         <Card.Body>
-          <Card.Title>Log In</Card.Title>
-          <Card.Text>
+          <Card.Title id='cardT' >Log In</Card.Title>
+          <Card.Text id="cardT2">
             Click Below to Log In
           </Card.Text>
           <LoginButton />
         </Card.Body>
       </Card>
+      </div>
     )
   }
 }
