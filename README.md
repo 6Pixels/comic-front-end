@@ -1,71 +1,65 @@
-# Getting Started with Create React App
+6Pixels Team : 
+Dena Kofahi, Khaled Tahat, LAITH HAYAJNEH, Mohammad Alkhateeb, Sondos Al-jawhary, Tariq Abu-Laban
+https://github.com/6Pixels (Links to an external site.)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Cooperation Plan
+What are the key strengths of each person on the team?
+Dena Kofahi : Design
+Khaled Tahat : good discovery skills
+LAITH HAYAJNEH : CSS3
+Mohammad Alkhateeb : JavaScript
+Sondos Al-jawhary : Team-worker
+Tariq Abu-Laban : Leadership
+How can you best utilize these strengths in the execution of your project?
+the best utilize these strengths put them together will make easy flow of task. 
+In which professional competencies do you each want to develop greater strength?
+front and back end.
+Knowing that every person in your team needs to understand all aspects of the project, how do you plan to approach the day-to-day work?
+Collaborating together.
+Conflict Plan
+What will be your group’s process to resolve conflict, when it arises?
+when a conflict happen we will drink a coffee together to solve the arises.
+What will your team do if one person is taking over the project and not letting the other members contribute?
+we change the pairs programming.
+How will you approach each other and the challenges of the project knowing that it is impossible for all members to be at the exact same place in understanding and skill level?
+collaboration.
+How will you raise concerns to members who are not adequately contributing?
+I will call 911.
+How and when will you escalate the conflict if your resolution attempts are unsuccessful?
+Send them to Supreme Judge Department.
+Communication Plan
+What hours will you be available to communicate?
+10:00 am until 5:00 pm
+What platforms will you use to communicate (ie. Slack, phone …)?
+Slack, Discord, Zoom
+How often will you take breaks?
+Every 2 hours. will take break.
+What is your plan if you start to fall behind?
+My plane to work until 11:59 pm.
+How will you communicate after hours and on the weekend?
+Slack.
+What is your strategy for ensuring everyone’s voice is heard?
+raise your hand.
+How will you ensure that you are creating a safe environment where everyone feels comfortable speaking up?
+every one is a leader.
+Work Plan
+How you will identify tasks, assign tasks, know when they are complete, and manage work in general?
+Trello board.
+What project management tool will be used?
+Trello.
+Git Process
+What components of your project will live on GitHub?
+front-end,  back-end
+How will you share the repository with your teammates?
+All of them are owner in the repository.
+What is your Git flow?
+When a feature is complete it is merged into the develop branch
+Will you be using a PR review workflow? If so, consider:
+How many people must review a PR?
+2 People.
+Who merges PRs?
+Leader.
+How often will you merge?
+at the end of the day.
+How will you communicate that it’s time to merge?
+Slack,  and we will decide that in zoom meeting.
