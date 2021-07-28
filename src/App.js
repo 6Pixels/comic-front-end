@@ -1,25 +1,59 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
+import Header from "./Components/FirstLayer/Header";
+import Footer from "./Components/FirstLayer/Footer";
+import Movies from "./Components/FirstLayer/Movies";
+import Comics from "./Components/FirstLayer/Comics";
+import Characters from "./Components/FirstLayer/Characters";
+import { BrowserRouter as Router, Switch, Route, Redirect } from "react-router-dom";
+import { withAuth0 } from "@auth0/auth0-react";
+import Login from './Login';
+import Profile from "./Components/FirstLayer/Profile";
+import "antd/dist/antd.css";
+import Slider from "./pages/Slider/Slider";
+import Router1 from "./router";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends React.Component {
+  render() {
+    return (
+      <div id="bodyContainer">
+        <Router>
+          <Header />
+          <Switch>
+            {/* Home Page */}
+            <Route exact path="/">
+              <div id="homebody">
+                <Slider />
+
+                <Router1 />
+              </div>
+
+
+            </Route>
+            {/* Profile Page */}
+            <Route exact path="/Profile">
+              {this.props.auth0.isAuthenticated ? <Profile /> : <Redirect to='/login' />}
+            </Route>
+            {/* Login Page */}
+            <Route exact path="/login">
+              {this.props.auth0.isAuthenticated ? <Redirect to='/profile' /> : <Login />}
+            </Route>
+            {/* Gallery Page */}
+            <Route exact path="/Movies">
+              <Movies />
+            </Route>
+            <Route exact path="/Comics">
+              <Comics />
+            </Route>
+            <Route exact path="/Characters">
+              <Characters />
+            </Route>
+          </Switch>
+          <Footer id="footer" />
+        </Router>
+      </div>
+    );
+  }
 }
 
-export default App;
+export default withAuth0(App);

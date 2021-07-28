@@ -1,38 +1,450 @@
-.App {
-  text-align: center;
+/* Body */
+#bodyContainer {
+  background-color: #1f1a1a;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Nav Bar css */
+#navbackground {
+  width: 100%;
+  height: 600px;
+  /* background-image: url('https://img.wallpapersafari.com/desktop/1920/1080/32/43/gKaZ0H.jpg'); */
+  background-size: cover;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.navLinks {
+  text-decoration: none;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.me-auto :hover {
+  color: rgb(230, 230, 150);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.ProfileHover :hover {
+  color: rgb(230, 230, 150);
+}
+
+/* Footer Css */
+#footer {
+  width: 100%;
+  height: 100px;
+  /* background-image: url('https://files.slack.com/files-pri/TNGRRLUMA-F029HT6C16Y/galaxy-header-4.jpg'); */
+  background-size: cover;
+  /* position: relative; */
+  /* bottom: 0px; */
+  /* background-color :#012A6B */
+  /* background-color:#5c0404; */
+  background-color: black;
+}
+
+/* Movies Css */
+.movieCard {
+  display: inline-block;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  padding: 15px;
+  font-family: fantasy;
+}
+
+/* comic Css */
+.comicCard {
+  display: inline-block;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  padding: 15px;
+  font-family: fantasy;
+}
+
+#comicsimg {
+  /* background-image: url('https://cdn.wallpapersafari.com/74/0/zx21V7.jpg'); */
+  width: 100%;
+  background-size: cover;
+  height: 300px;
+  font-size: 8em;
+}
+#comicsimg p {
+  color: rgb(229 88 42);
+  left: 90px;
+  top: 220px;
+  font-family: fantasy;
+  position: absolute;
+}
+/* characters Css */
+.charactersCard {
+  display: inline-block;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  padding: 15px;
+  font-family: fantasy;
+}
+.itemsContainer {
+  margin: 0px 100px;
+  /* border: 1px solid gray; */
+}
+.ItemCards {
+  width: 155px;
+  cursor: pointer;
+}
+.charModal {
+  width: 1000px;
+  border: 1px solid red;
+}
+/* Charts */
+.ModalCharImg {
+  width: 220px;
+  margin-left: 10px;
+}
+.powersChart {
+  width: 90px;
+  height: 90px;
+  margin: 10px;
+} /* powers Chart at PowerChart file*/
+#allChartsContainer {
+  position: absolute;
+  top: 80px;
+  right: 90px;
+}
+/* Table */
+.apperanceTable {
+  width: 220px;
+  margin: 10px;
+}
+
+/* Error Alert */
+.DataErrorAlert {
+  width: 50%;
+  margin-left: 300px;
+}
+
+/* Seacrch Form Css */
+#searchForm {
+  width: 50%;
+  margin-left: 300px;
+}
+.searchFormContent {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+#laith {
+  margin-bottom: 0;
+  background-color: black;
+  font-family: fantasy;
+
+  /* letter-spacing: 1px; */
+}
+
+.navLinks :hover {
+  background-color: red;
+}
+#title {
+  color: white;
+  font-size: 35px;
+  letter-spacing: 1px;
+}
+
+a {
+  text-decoration: none;
+  margin: 15px;
+}
+
+#navbackground {
+  height: auto;
+}
+/* .makeStyles-imgGallery-73{
+} */
+
+#h33 {
+  color: #035eb299;
+}
+
+#cardLog {
+  /* margin-left: 1500px; */
+  background-image: url("./Components/assets/img/2660432.png");
+}
+
+.log {
+  height: 1000px;
+  padding-top: 15%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("./Components/assets/img/superheroes.jpg");
+}
+#cardT {
+  font-family: "Black Ops One", cursive;
+  padding-top: 50px;
+  color: #fff900;
+  /* font-family: fantasy; */
+}
+#cardT2 {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  color: white;
+  font-family: "Bungee Inline", cursive;
+}
+#char,
+#sss {
+  margin-bottom: 50px;
+}
+#ss {
+  position: relative;
+  /* z-index: 20000; */
+  margin-top: 50px;
+}
+#asd {
+  color: rgba(239, 241, 236, 0.972);
+  text-align: center;
+  font-size: 5em;
+  background-color: rgba(0, 0, 0, 0.644);
+}
+
+/*slider*/
+
+.slider {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapt {
+  margin: 0.5rem;
+  transform-style: preserve-3d;
+  transform: perspective(100rem);
+  cursor: pointer;
+}
+
+.containert1 {
+  --rX: 0;
+  --rY: 0;
+  --bX: 50%;
+  --bY: 80%;
+
+  width: 20rem;
+  height: 25rem;
+  border: 1px solid var(--background-color);
+  border-radius: 1.6rem;
+  padding: 4rem;
+
+  display: flex;
+  align-items: flex-end;
+
+  position: relative;
+  transform: rotateX(calc(var(--rX) * 1deg)) rotateY(calc(var(--rY) * 1deg));
+
+  background: linear-gradient(hsla(0, 0%, 100%, 0.1), hsla(0, 0%, 100%, 0.1)),
+    url("https://ca.slack-edge.com/TNGRRLUMA-U01UM9UMG64-680c041878c8-512");
+  background-position: var(--bX) var(--bY);
+  background-size: 30rem auto;
+  box-shadow: 0 0 3rem 0.5rem hsla(0, 0%, 0%, 0.2);
+
+  transition: transform 0.6s 1s;
+}
+
+.containert2 {
+  --rX: 0;
+  --rY: 0;
+  --bX: 50%;
+  --bY: 80%;
+
+  width: 20rem;
+  height: 25rem;
+  border: 1px solid var(--background-color);
+  border-radius: 1.6rem;
+  padding: 4rem;
+
+  display: flex;
+  align-items: flex-end;
+
+  position: relative;
+  transform: rotateX(calc(var(--rX) * 1deg)) rotateY(calc(var(--rY) * 1deg));
+
+  background: linear-gradient(hsla(0, 0%, 100%, 0.1), hsla(0, 0%, 100%, 0.1)),
+    url("https://ca.slack-edge.com/TNGRRLUMA-U01TQN6UQP8-96f8676ecf84-512");
+  background-position: var(--bX) var(--bY);
+  background-size: 20rem auto;
+  box-shadow: 0 0 3rem 0.5rem hsla(0, 0%, 0%, 0.2);
+
+  transition: transform 0.6s 1s;
+}
+.containert3 {
+  --rX: 0;
+  --rY: 0;
+  --bX: 50%;
+  --bY: 80%;
+
+  width: 20rem;
+  height: 25rem;
+  border: 1px solid var(--background-color);
+  border-radius: 1.6rem;
+  padding: 4rem;
+
+  display: flex;
+  align-items: flex-end;
+
+  position: relative;
+  transform: rotateX(calc(var(--rX) * 1deg)) rotateY(calc(var(--rY) * 1deg));
+
+  background: linear-gradient(hsla(0, 0%, 100%, 0.1), hsla(0, 0%, 100%, 0.1)),
+    url("https://ca.slack-edge.com/TNGRRLUMA-U01UA4C5HNV-44c3c999bb01-512");
+  background-position: var(--bX) var(--bY);
+  background-size: 25rem auto;
+  box-shadow: 0 0 3rem 0.5rem hsla(0, 0%, 0%, 0.2);
+
+  transition: transform 0.6s 1s;
+}
+.containert4 {
+  --rX: 0;
+  --rY: 0;
+  --bX: 50%;
+  --bY: 80%;
+
+  width: 20rem;
+  height: 25rem;
+  border: 1px solid var(--background-color);
+  border-radius: 1.6rem;
+  padding: 4rem;
+
+  display: flex;
+  align-items: flex-end;
+
+  position: relative;
+  transform: rotateX(calc(var(--rX) * 1deg)) rotateY(calc(var(--rY) * 1deg));
+
+  background: linear-gradient(hsla(0, 0%, 100%, 0.1), hsla(0, 0%, 100%, 0.1)),
+    url("https://ca.slack-edge.com/TNGRRLUMA-U01TUDCP3HT-847ceef88e12-512");
+  background-position: var(--bX) var(--bY);
+  background-size: 25rem auto;
+  box-shadow: 0 0 3rem 0.5rem hsla(0, 0%, 0%, 0.2);
+
+  transition: transform 0.6s 1s;
+}
+.containert5 {
+  --rX: 0;
+  --rY: 0;
+  --bX: 50%;
+  --bY: 80%;
+
+  width: 20rem;
+  height: 25rem;
+  border: 1px solid var(--background-color);
+  border-radius: 1.6rem;
+  padding: 4rem;
+
+  display: flex;
+  align-items: flex-end;
+
+  position: relative;
+  transform: rotateX(calc(var(--rX) * 1deg)) rotateY(calc(var(--rY) * 1deg));
+
+  background: linear-gradient(hsla(0, 0%, 100%, 0.1), hsla(0, 0%, 100%, 0.1)),
+    url("https://ca.slack-edge.com/TNGRRLUMA-U01U3LHE17W-5caca8b458c5-512");
+  background-position: var(--bX) var(--bY);
+  background-size: 25rem auto;
+  box-shadow: 0 0 3rem 0.5rem hsla(0, 0%, 0%, 0.2);
+
+  transition: transform 0.6s 1s;
+}
+.containert6 {
+  --rX: 0;
+  --rY: 0;
+  --bX: 50%;
+  --bY: 80%;
+
+  width: 20rem;
+  height: 25rem;
+  border: 1px solid var(--background-color);
+  border-radius: 1.6rem;
+  padding: 4rem;
+
+  display: flex;
+  align-items: flex-end;
+
+  position: relative;
+  transform: rotateX(calc(var(--rX) * 1deg)) rotateY(calc(var(--rY) * 1deg));
+
+  background: linear-gradient(hsla(0, 0%, 100%, 0.1), hsla(0, 0%, 100%, 0.1)),
+    url("https://ca.slack-edge.com/TNGRRLUMA-U01U3LHHXRS-da5eec1a5a18-512");
+  background-position: var(--bX) var(--bY);
+  background-size: 25rem auto;
+  box-shadow: 0 0 3rem 0.5rem hsla(0, 0%, 0%, 0.2);
+
+  transition: transform 0.6s 1s;
+}
+
+.containert1 p {
+  color: hsla(0, 0%, 100%, 0.6);
+  font-size: 2.2rem;
+}
+.containert2 p {
+  color: hsla(0, 0%, 100%, 0.6);
+  font-size: 2.2rem;
+}
+.containert3 p {
+  color: hsla(0, 0%, 100%, 0.6);
+  font-size: 2.2rem;
+}
+.containert4 p {
+  color: hsla(0, 0%, 100%, 0.6);
+  font-size: 2.2rem;
+}
+.containert5 p {
+  color: hsla(0, 0%, 100%, 0.6);
+  font-size: 2.2rem;
+}
+.containert6 p {
+  color: hsla(0, 0%, 100%, 0.6);
+  font-size: 2.2rem;
+}
+.wrapt:hover .container::before,
+.wrapt:hover .container::after {
+  width: calc(100% - 4rem);
+  height: calc(100% - 4rem);
+}
+
+.abs-site-link {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  color: hsla(0, 0%, 0%, 0.6);
+  font-size: 1.6rem;
+}
+
+.sliderheader {
+  padding-bottom: 40%;
+}
+/* .makeStyles-parallax-230 {
+  border: solid red;
+  height: 25vh;
+} */
+#prof {
+  height: 55vh;
+  border: solid red;
+}
+
+.title22 {
+  font-size: 40px;
+  font-weight: bold;
+  color: #fff900;
+  font-family: "Black Ops One", cursive;
+}
+#com {
+  /* margin-left: -80px; */
+  float: right;
+  text-align: left;
+  color: white;
+  margin-right: -100px;
+  margin-top: 250px;
+  opacity: 0.9;
+  background-color: rgba(0, 0, 0, 0.445);
+}
+#homebody {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+  background-image: url("./Components/assets/img/img.jpg");
 }

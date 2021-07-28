@@ -1,70 +1,132 @@
-# Getting Started with Create React App
+# 6Pixels Team :
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+- Dena Kofahi.<br />
+- Khaled Tahat.<br />
+- LAITH HAYAJNEH.<br />
+- Mohammad Alkhateeb<br />
+- Sondos Al-jawhary.<br />
+- Tariq Abu-Laban.<br />
 
-## Available Scripts
+GitHub Link: https://github.com/6Pixels <br />
+Trello Board: https://trello.com/b/Wqx14PgP/project-301
 
-In the project directory, you can run:
+## Cooperation Plan
 
-### `npm start`
+1. What are the key strengths of each person on the team?<br />
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+   - Dena Kofahi : `Design`.
+   - Khaled Tahat : `good discovery skills`.
+   - Laith Hayajneh : `CSS3`.
+   - Mohammad Alkhateeb : `JavaScript`.
+   - Sondos Al-jawhary : `Team-worker`.
+   - Tariq Abu-Laban : `Leadership`.
+     <br />
+     <br />
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+2. How can you best utilize these strengths in the execution of your project?<br />
+   Putting all there strenghts together is the secert of success in our work.
 
-### `npm test`
+3. In which professional competencies do you each want to develop greater strength?<br />
+   We would like to grow our experiance and coding skills with React, bulding Back-end servers as well dealing with mongoDBs.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+4. Knowing that every person in your team needs to understand all aspects of the project, how do you plan to approach the day-to-day work?<br />
+   I will use the concept of pair programming, assign each pair to different tasks in front and back ends in addition I will then change pairs members so all of us can work together and gain experience from each other.
 
-### `npm run build`
+5. What will be your group’s process to resolve conflict, when it arises?<br />
+   firstly, no one is allowed to push or make any pull requests without being in a merge party where all the team members must guther in one room to push work and pull branches, if any conflict showd up all group members will work together to solve those conflicts.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+6. What will your team do if one person is taking over the project and not letting the other members contribute?<br />
+   will he must be a professional if he want to do so, yet this is not allowed and a complaint report will be submitted to the instructor.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+7. How will you approach each other and the challenges of the project knowing that it is impossible for all members to be at the exact same place in understanding and skill level?<br />
+   we all are going to try our best in helping each other by trying to answer any question showd up, explain things if any felt lost or was not following and I will try to change the pairs every day to make sure every team member had the chance to work with every other team members.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+8. How will you raise concerns to members who are not adequately contributing?<br />
+   Will firstly try to talk to him and try to convinces him that it is in his intrest to work and think of things, after all if this came out with no good, a complaint report will be submitted to the instructor.
 
-### `npm run eject`
+9. How and when will you escalate the conflict if your resolution attempts are unsuccessful?<br />
+   If no way of mine can solve the conflict, a complaint report will be submitted to the instructor.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+10. What hours will you be available to communicate?<br />
+    `10:00 am till 5:00 pm`
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+11. What platforms will you use to communicate (ie. Slack, phone …)?<br />
+    `Slack`, `Discord`, `Zoom`
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+12. How often will you take breaks?<br />
+    `As needed`, maybe every two hours.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+13. What is your plan if you start to fall behind?<br />
+    Will in this case we will push ourselfes and work harder to more extra hours, and God does not burden a soul beyond its capacity. :)
 
-## Learn More
+14. How will you communicate after hours and on the weekend?<br />
+    We can use `Slack` and we can creat our `Zoom` meeting.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+15. What is your strategy for ensuring everyone’s voice is heard?<br />
+    Will leave noates in our `Slack` channel or we can use Zoom by raising hands and other interactions.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+16. How will you ensure that you are creating a safe environment where everyone feels comfortable speaking up?<br />
+    every one is a leader.
+    Work Plan
 
-### Code Splitting
+17. How you will identify tasks, assign tasks, know when they are complete, and manage work in general?<br />
+    We are planning to use `Trello board` to manage these stuff.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+18. What project management tool will be used?<br />
+    `Trello`, `Git Process`, `VS Code`
 
-### Analyzing the Bundle Size
+19. What components of your project will live on GitHub?<br />
+    `Front-end`, `Back-end`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+20. How will you share the repository with your teammates?<br />
+    We are all in the one organization on github,
 
-### Making a Progressive Web App
+21. What is your Git flow?<br />
+    When a feature is complete it is merged into the develop branch
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+22. Will you be using a PR review workflow? If so, consider:
+    How many people must review a PR?<br />
+    `2 People`.
 
-### Advanced Configuration
+23. Who merges PRs?<br />
+    `The Leader` or every one who pushes work but the presence of the user is a must.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+24. How often will you merge?<br />
+    `As needed` but usually At the end of the day.
 
-### Deployment
+25. How will you communicate that it’s time to merge?<br />
+    `Slack`, and we will decide that in `Zoom` meeting.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+<br />
+<br />
 
-### `npm run build` fails to minify
+## Meet Our Team Members
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+[![Mohammed Khateeb](https://avatars.githubusercontent.com/u/82310773?v=4)](https://github.com/mohnalkhateeb) | Mohammed Khateeb
+
+[![Tariq Abulaban](https://avatars.githubusercontent.com/u/82310645?v=4)](https://github.com/Abu-laban) | Tariq Abulaban
+
+[![Khaled Tahat](src/Components/assets/img/WireFrame/TNGRRLUMA-U01TUDCP3HT-847ceef88e12-512.jpg)](https://github.com/KZTahat) | Khaled Tahat
+
+[![Laith Hayajneh](https://avatars.githubusercontent.com/u/82310575?v=4)](https://github.com/Laith-Hayajneh) | Laith Hayajneh
+
+[![Dina Kofahi](https://avatars.githubusercontent.com/u/82310640?v=4)](https://github.com/Denakof) | Dina Kofahi
+
+[![Sondos Jawhary](https://avatars.githubusercontent.com/u/82310673?v=4)](https://github.com/SJAljawhary) | Sondos Jawhary
+
+## Project Wire Frames
+
+[![Home Page](src/Components/assets/img/WireFrame/homepage2.png)]() | Home Page
+<br />
+
+[![Movies Page](src/Components/assets/img/WireFrame/movies.png)]() | Movies Page
+<br />
+
+[![Comics & Characters](src/Components/assets/img/WireFrame/comic&characters.png)]() | Comics & Characters Page
+<br />
+
+[![Login Page](src/Components/assets/img/WireFrame/login.png)]() | Login Page
+<br />
+
+[![Profile Page](src/Components/assets/img/WireFrame/profile.png)]() | Profile Page
+<br />
