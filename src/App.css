@@ -341,7 +341,7 @@ a {
   transform: rotateX(calc(var(--rX) * 1deg)) rotateY(calc(var(--rY) * 1deg));
 
   background: linear-gradient(hsla(0, 0%, 100%, 0.1), hsla(0, 0%, 100%, 0.1)),
-    url("https://ca.slack-edge.com/TNGRRLUMA-U01U3LHE17W-5caca8b458c5-512");
+    url("https://avatars.githubusercontent.com/u/82310575?v=4");
   background-position: var(--bX) var(--bY);
   background-size: 25rem auto;
   box-shadow: 0 0 3rem 0.5rem hsla(0, 0%, 0%, 0.2);
