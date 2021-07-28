@@ -26,7 +26,7 @@ const Moimage = (props) => {
 
   return (
     <>
-    <Parallax image={require("../assets/img/movies.jpg").default}>
+    <Parallax image={require("../assets/img/movie4.jpg").default}>
         <div className={classes.container}>
           <GridContainer>
             <GridItem>

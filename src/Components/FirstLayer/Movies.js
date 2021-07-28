@@ -60,7 +60,7 @@ class Gallery extends Component {
                   <Card.Title>{element.title}</Card.Title>
                   <Card.Title>{element.release_date}</Card.Title>
                   {isAuthenticated && (
-                    <Button variant="primary" onClick={() => this.addMovie(index)}>Add to Fav</Button>
+                    <Button variant="danger" onClick={() => this.addMovie(index)}>Add to Fav</Button>
                   )}
                 </Card.Body>
               </Card>

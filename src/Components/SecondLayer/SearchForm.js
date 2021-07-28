@@ -15,7 +15,7 @@ export class SearchForm extends Component {
               />
             </div>
             <div className='searchFormContent'>
-              <Button variant="dark" type="submit">
+              <Button variant="warning" type="submit">
                 Go
               </Button>
             </div>
