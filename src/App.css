@@ -1,7 +1,6 @@
 /* Body */
 #bodyContainer {
-  background-color: rgba(161, 161, 161, 0.877);
-  background-image: url("./Components/assets/img/GALAXY-HEADER-4.jpg");
+  background-color: #1f1a1a;
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: fixed;
@@ -19,14 +18,15 @@
   text-decoration: none;
   color: white;
 }
+.me-auto :hover {
+  color: rgb(230, 230, 150);
+}
 
 .ProfileHover :hover {
-  color: rgb(0, 0, 0);
+  color: rgb(230, 230, 150);
 }
 
-.me-auto :hover {
-  color: rgb(0, 0, 0);
-}
+
 
 /* Footer Css */
 #footer {
@@ -43,27 +43,61 @@
 
 /* Movies Css */
 .movieCard {
+
   display: inline-block;
-  margin: 12px;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  padding: 15px; 
+font-family: fantasy; 
 }
 
 /* comic Css */
 .comicCard {
+
   display: inline-block;
-  margin: 12px;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  padding: 15px; 
+font-family: fantasy; 
 }
 
+#comicsimg{
+  /* background-image: url('https://cdn.wallpapersafari.com/74/0/zx21V7.jpg'); */
+  width: 100%;
+  background-size: cover;
+  height: 300px;
+  font-size: 8em;
+  
+
+
+}
+#comicsimg p {
+  color:rgb(229 88 42);
+left: 90px;
+top: 220px;
+font-family: fantasy;
+position: absolute
+;
+
+
+}
 /* characters Css */
-.charactersCard {
+.charactersCard{
   display: inline-block;
-  margin: 12px;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  padding: 15px; 
+font-family: fantasy; 
 }
 .itemsContainer {
   margin: 0px 100px;
-  border: 1px solid gray;
+  /* border: 1px solid gray; */
 }
 .ItemCards {
-  width: 150px;
+  
+  width: 155px;
+  cursor: pointer;
+
 }
 .charModal {
   width: 1000px;
@@ -113,10 +147,11 @@
 
   /* letter-spacing: 1px; */
 }
-/* .navLinks :hover{
+
+.navLinks :hover{
     background-color: red;
 
-} */
+}
 #title {
   color: white;
   font-size: 35px;
@@ -165,15 +200,24 @@ a {
 #char,
 #sss {
   margin-bottom: 350px;
+  text-align: right;
+  background-image: cover;
+
 }
 #ss {
   position: relative;
-  z-index: 20000;
+  /* z-index: 20000; */
+margin-top: 50px;
+
 }
 #asd {
-  color: #e7311fde;
-  text-align: center;
-  font-size: 15em;
+  /* color: #e7311fde; */
+  color:black;
+  position: relative;
+left: 85px;
+
+  font-family: fantasy;
+  font-size: 8em;
 }
 
 /*slider*/

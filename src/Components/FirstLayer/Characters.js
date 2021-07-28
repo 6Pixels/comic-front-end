@@ -100,14 +100,16 @@ export class Characters extends Component {
   render() {
     return (
       <div>
-        <div id="char">
-
-        <BackL/>
-        </div>
-        <SearchForm
-          string="Search for Hero or villein"
+          <SearchForm
+        className='searchForm'
+          string="Search for Hero or villain"
           searchItems={this.searchItems}
         />
+        {/* <div id="char"> */}
+{/* 
+        <BackL/> */}
+       
+      
         <div className="itemsContainer">
           {this.state.showItems &&
             this.state.characters.map((element, index) => {
@@ -117,7 +119,7 @@ export class Characters extends Component {
                     className="ItemCards"
                     onClick={() => this.showCharModel(index)}
                   >
-                    <Card.Img variant="top" src={element.imageUrl} />
+                    <Card.Img variant="danger" src={element.imageUrl} />
                     <Card.Body>
                       <Card.Title>{element.name}</Card.Title>
                     </Card.Body>
