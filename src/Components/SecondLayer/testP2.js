@@ -26,7 +26,9 @@ const Moimage = (props) => {
 
   return (
     <>
+
     <Parallax image={require("../assets/img/movee.jpg").default}>
+
         <div className={classes.container}>
           <GridContainer>
             <GridItem>

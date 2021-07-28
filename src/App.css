@@ -1,7 +1,6 @@
 /* Body */
 #bodyContainer {
-  background-color: rgba(161, 161, 161, 0.877);
-  background-image: url("./Components/assets/img/GALAXY-HEADER-4.jpg");
+  background-color: #1f1a1a;
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: fixed;
@@ -15,18 +14,20 @@
   /* background-image: url('https://img.wallpapersafari.com/desktop/1920/1080/32/43/gKaZ0H.jpg'); */
   background-size: cover;
 }
+
 .navLinks {
   text-decoration: none;
   color: white;
 }
+.me-auto :hover {
+  color: rgb(230, 230, 150);
+}
 
 .ProfileHover :hover {
-  color: rgb(0, 0, 0);
+  color: rgb(230, 230, 150);
 }
 
-.me-auto :hover {
-  color: rgb(0, 0, 0);
-}
+
 
 /* Footer Css */
 #footer {
@@ -43,27 +44,61 @@
 
 /* Movies Css */
 .movieCard {
+
   display: inline-block;
-  margin: 12px;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  padding: 15px; 
+font-family: fantasy; 
 }
 
 /* comic Css */
 .comicCard {
+
   display: inline-block;
-  margin: 12px;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  padding: 15px; 
+font-family: fantasy; 
 }
 
+#comicsimg{
+  /* background-image: url('https://cdn.wallpapersafari.com/74/0/zx21V7.jpg'); */
+  width: 100%;
+  background-size: cover;
+  height: 300px;
+  font-size: 8em;
+  
+
+
+}
+#comicsimg p {
+  color:rgb(229 88 42);
+left: 90px;
+top: 220px;
+font-family: fantasy;
+position: absolute
+;
+
+
+}
 /* characters Css */
-.charactersCard {
+.charactersCard{
   display: inline-block;
-  margin: 12px;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  padding: 15px; 
+font-family: fantasy; 
 }
 .itemsContainer {
   margin: 0px 100px;
-  border: 1px solid gray;
+  /* border: 1px solid gray; */
 }
 .ItemCards {
-  width: 150px;
+  
+  width: 155px;
+  cursor: pointer;
+
 }
 .charModal {
   width: 1000px;
@@ -113,10 +148,11 @@
 
   /* letter-spacing: 1px; */
 }
-/* .navLinks :hover{
+
+.navLinks :hover{
     background-color: red;
 
-} */
+}
 #title {
   color: white;
   font-size: 35px;
@@ -164,25 +200,239 @@ a {
 }
 #char,
 #sss {
+
   margin-bottom: 50px;
+
 }
 #ss {
   position: relative;
-  z-index: 20000;
+  /* z-index: 20000; */
+margin-top: 50px;
+
 }
 #asd {
+
   color: rgba(239, 241, 236, 0.972);
   text-align: center;
   font-size: 5em;
   background-color: rgba(0, 0, 0, 0.644);
+
 }
 
 /*slider*/
 
-#tariq {
-  margin: auto;
+.slider {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
 
-  width: 75%;
+.wrapt {
+  margin: 0.5rem;
+  transform-style: preserve-3d;
+  transform: perspective(100rem);
+  cursor: pointer;
+}
+
+.containert1 {
+  --rX: 0;
+  --rY: 0;
+  --bX: 50%;
+  --bY: 80%;
+
+  width: 20rem;
+  height: 25rem;
+  border: 1px solid var(--background-color);
+  border-radius: 1.6rem;
+  padding: 4rem;
+
+  display: flex;
+  align-items: flex-end;
+
+  position: relative;
+  transform: rotateX(calc(var(--rX) * 1deg)) rotateY(calc(var(--rY) * 1deg));
+
+  background: linear-gradient(hsla(0, 0%, 100%, 0.1), hsla(0, 0%, 100%, 0.1)),
+    url("https://ca.slack-edge.com/TNGRRLUMA-U01UM9UMG64-680c041878c8-512");
+  background-position: var(--bX) var(--bY);
+  background-size: 30rem auto;
+  box-shadow: 0 0 3rem 0.5rem hsla(0, 0%, 0%, 0.2);
+
+  transition: transform 0.6s 1s;
+}
+
+.containert2 {
+  --rX: 0;
+  --rY: 0;
+  --bX: 50%;
+  --bY: 80%;
+
+  width: 20rem;
+  height: 25rem;
+  border: 1px solid var(--background-color);
+  border-radius: 1.6rem;
+  padding: 4rem;
+
+  display: flex;
+  align-items: flex-end;
+
+  position: relative;
+  transform: rotateX(calc(var(--rX) * 1deg)) rotateY(calc(var(--rY) * 1deg));
+
+  background: linear-gradient(hsla(0, 0%, 100%, 0.1), hsla(0, 0%, 100%, 0.1)),
+    url("https://ca.slack-edge.com/TNGRRLUMA-U01TQN6UQP8-96f8676ecf84-512");
+  background-position: var(--bX) var(--bY);
+  background-size: 20rem auto;
+  box-shadow: 0 0 3rem 0.5rem hsla(0, 0%, 0%, 0.2);
+
+  transition: transform 0.6s 1s;
+}
+.containert3 {
+  --rX: 0;
+  --rY: 0;
+  --bX: 50%;
+  --bY: 80%;
+
+  width: 20rem;
+  height: 25rem;
+  border: 1px solid var(--background-color);
+  border-radius: 1.6rem;
+  padding: 4rem;
+
+  display: flex;
+  align-items: flex-end;
+
+  position: relative;
+  transform: rotateX(calc(var(--rX) * 1deg)) rotateY(calc(var(--rY) * 1deg));
+
+  background: linear-gradient(hsla(0, 0%, 100%, 0.1), hsla(0, 0%, 100%, 0.1)),
+    url("https://ca.slack-edge.com/TNGRRLUMA-U01UA4C5HNV-44c3c999bb01-512");
+  background-position: var(--bX) var(--bY);
+  background-size: 25rem auto;
+  box-shadow: 0 0 3rem 0.5rem hsla(0, 0%, 0%, 0.2);
+
+  transition: transform 0.6s 1s;
+}
+.containert4 {
+  --rX: 0;
+  --rY: 0;
+  --bX: 50%;
+  --bY: 80%;
+
+  width: 20rem;
+  height: 25rem;
+  border: 1px solid var(--background-color);
+  border-radius: 1.6rem;
+  padding: 4rem;
+
+  display: flex;
+  align-items: flex-end;
+
+  position: relative;
+  transform: rotateX(calc(var(--rX) * 1deg)) rotateY(calc(var(--rY) * 1deg));
+
+  background: linear-gradient(hsla(0, 0%, 100%, 0.1), hsla(0, 0%, 100%, 0.1)),
+    url("https://ca.slack-edge.com/TNGRRLUMA-U01TUDCP3HT-847ceef88e12-512");
+  background-position: var(--bX) var(--bY);
+  background-size: 25rem auto;
+  box-shadow: 0 0 3rem 0.5rem hsla(0, 0%, 0%, 0.2);
+
+  transition: transform 0.6s 1s;
+}
+.containert5 {
+  --rX: 0;
+  --rY: 0;
+  --bX: 50%;
+  --bY: 80%;
+
+  width: 20rem;
+  height: 25rem;
+  border: 1px solid var(--background-color);
+  border-radius: 1.6rem;
+  padding: 4rem;
+
+  display: flex;
+  align-items: flex-end;
+
+  position: relative;
+  transform: rotateX(calc(var(--rX) * 1deg)) rotateY(calc(var(--rY) * 1deg));
+
+  background: linear-gradient(hsla(0, 0%, 100%, 0.1), hsla(0, 0%, 100%, 0.1)),
+    url("https://ca.slack-edge.com/TNGRRLUMA-U01U3LHE17W-5caca8b458c5-512");
+  background-position: var(--bX) var(--bY);
+  background-size: 25rem auto;
+  box-shadow: 0 0 3rem 0.5rem hsla(0, 0%, 0%, 0.2);
+
+  transition: transform 0.6s 1s;
+}
+.containert6 {
+  --rX: 0;
+  --rY: 0;
+  --bX: 50%;
+  --bY: 80%;
+
+  width: 20rem;
+  height: 25rem;
+  border: 1px solid var(--background-color);
+  border-radius: 1.6rem;
+  padding: 4rem;
+
+  display: flex;
+  align-items: flex-end;
+
+  position: relative;
+  transform: rotateX(calc(var(--rX) * 1deg)) rotateY(calc(var(--rY) * 1deg));
+
+  background: linear-gradient(hsla(0, 0%, 100%, 0.1), hsla(0, 0%, 100%, 0.1)),
+    url("https://ca.slack-edge.com/TNGRRLUMA-U01U3LHHXRS-da5eec1a5a18-512");
+  background-position: var(--bX) var(--bY);
+  background-size: 25rem auto;
+  box-shadow: 0 0 3rem 0.5rem hsla(0, 0%, 0%, 0.2);
+
+  transition: transform 0.6s 1s;
+}
+
+.containert1 p {
+  color: hsla(0, 0%, 100%, 0.6);
+  font-size: 2.2rem;
+}
+.containert2 p {
+  color: hsla(0, 0%, 100%, 0.6);
+  font-size: 2.2rem;
+}
+.containert3 p {
+  color: hsla(0, 0%, 100%, 0.6);
+  font-size: 2.2rem;
+}
+.containert4 p {
+  color: hsla(0, 0%, 100%, 0.6);
+  font-size: 2.2rem;
+}
+.containert5 p {
+  color: hsla(0, 0%, 100%, 0.6);
+  font-size: 2.2rem;
+}
+.containert6 p {
+  color: hsla(0, 0%, 100%, 0.6);
+  font-size: 2.2rem;
+}
+.wrapt:hover .container::before,
+.wrapt:hover .container::after {
+  width: calc(100% - 4rem);
+  height: calc(100% - 4rem);
+}
+
+.abs-site-link {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  color: hsla(0, 0%, 0%, 0.6);
+  font-size: 1.6rem;
+}
+
+.sliderheader {
+  padding-bottom: 40%;
 }
 /* .makeStyles-parallax-230 {
   border: solid red;

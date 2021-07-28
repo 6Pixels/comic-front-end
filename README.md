@@ -1,65 +1,128 @@
-6Pixels Team :
-Dena Kofahi, Khaled Tahat, LAITH HAYAJNEH, Mohammad Alkhateeb, Sondos Al-jawhary, Tariq Abu-Laban
-https://github.com/6Pixels (Links to an external site.)
+# 6Pixels Team :
+- Dena Kofahi.<br />
+- Khaled Tahat.<br />
+- LAITH HAYAJNEH.<br />
+- Mohammad Alkhateeb<br />
+- Sondos Al-jawhary.<br />
+- Tariq Abu-Laban.<br />
 
-Cooperation Plan
-What are the key strengths of each person on the team?
-Dena Kofahi : Design
-Khaled Tahat : good discovery skills
-LAITH HAYAJNEH : CSS3
-Mohammad Alkhateeb : JavaScript
-Sondos Al-jawhary : Team-worker
-Tariq Abu-Laban : Leadership
-How can you best utilize these strengths in the execution of your project?
-the best utilize these strengths put them together will make easy flow of task.
-In which professional competencies do you each want to develop greater strength?
-front and back end.
-Knowing that every person in your team needs to understand all aspects of the project, how do you plan to approach the day-to-day work?
-Collaborating together.
-Conflict Plan
-What will be your group’s process to resolve conflict, when it arises?
-when a conflict happen we will drink a coffee together to solve the arises.
-What will your team do if one person is taking over the project and not letting the other members contribute?
-we change the pairs programming.
-How will you approach each other and the challenges of the project knowing that it is impossible for all members to be at the exact same place in understanding and skill level?
-collaboration.
-How will you raise concerns to members who are not adequately contributing?
-I will call 911.
-How and when will you escalate the conflict if your resolution attempts are unsuccessful?
-Send them to Supreme Judge Department.
-Communication Plan
-What hours will you be available to communicate?
-10:00 am until 5:00 pm
-What platforms will you use to communicate (ie. Slack, phone …)?
-Slack, Discord, Zoom
-How often will you take breaks?
-Every 2 hours. will take break.
-What is your plan if you start to fall behind?
-My plane to work until 11:59 pm.
-How will you communicate after hours and on the weekend?
-Slack.
-What is your strategy for ensuring everyone’s voice is heard?
-raise your hand.
-How will you ensure that you are creating a safe environment where everyone feels comfortable speaking up?
-every one is a leader.
-Work Plan
-How you will identify tasks, assign tasks, know when they are complete, and manage work in general?
-Trello board.
-What project management tool will be used?
-Trello.
-Git Process
-What components of your project will live on GitHub?
-front-end, back-end
-How will you share the repository with your teammates?
-All of them are owner in the repository.
-What is your Git flow?
+GitHub Link: https://github.com/6Pixels <br />
+Trello Board: https://trello.com/b/Wqx14PgP/project-301
+
+## Cooperation Plan
+1. What are the key strengths of each person on the team?<br />
+    - Dena Kofahi : `Design`.
+    - Khaled Tahat : `good discovery skills`.
+    - Laith Hayajneh : `CSS3`.
+    - Mohammad Alkhateeb : `JavaScript`.
+    - Sondos Al-jawhary : `Team-worker`.
+    - Tariq Abu-Laban : `Leadership`.
+    <br />
+    <br />
+
+2. How can you best utilize these strengths in the execution of your project?<br />
+    Putting all there strenghts together is the secert of success in our work.
+
+3. In which professional competencies do you each want to develop greater strength?<br />
+    We would like to grow our experiance and coding skills with React, bulding Back-end servers as well dealing with mongoDBs.
+
+4. Knowing that every person in your team needs to understand all aspects of the project, how do you plan to approach the day-to-day work?<br />
+    I will use the concept of pair programming, assign each pair to different tasks in front and back ends in addition I will then change pairs members so all of us can work together and gain experience from each other.
+
+5. What will be your group’s process to resolve conflict, when it arises?<br />
+    firstly, no one is allowed to push or make any pull requests without being in a merge party where all the team members must guther in one room to push work and pull branches, if any conflict showd up all group members will work together to solve those conflicts.
+
+6. What will your team do if one person is taking over the project and not letting the other members contribute?<br />
+    will he must be a professional if he want to do so, yet this is not allowed and a complaint report will be submitted to the instructor.
+
+7. How will you approach each other and the challenges of the project knowing that it is impossible for all members to be at the exact same place in understanding and skill level?<br />
+    we all are going to try our best in helping each other by trying to answer any question showd up, explain things if any felt lost or was not following and I will try to change the pairs every day to make sure every team member had the chance to work with every other team members.
+
+8. How will you raise concerns to members who are not adequately contributing?<br />
+    Will firstly try to talk to him and try to  convinces him that it is in his intrest to work and think of things, after all if this came out with no good, a complaint report will be submitted to the instructor.
+
+9. How and when will you escalate the conflict if your resolution attempts are unsuccessful?<br />
+    If no way of mine can solve the conflict, a complaint report will be submitted to the instructor.
+
+10. What hours will you be available to communicate?<br />
+    `10:00 am till 5:00 pm`
+
+11. What platforms will you use to communicate (ie. Slack, phone …)?<br />
+    `Slack`, `Discord`, `Zoom`
+
+12. How often will you take breaks?<br />
+    `As needed`, maybe every two hours.
+
+13. What is your plan if you start to fall behind?<br />
+    Will in this case we will push ourselfes and work harder to more extra hours, and God does not burden a soul beyond its capacity. :)
+
+14. How will you communicate after hours and on the weekend?<br />
+    We can use `Slack` and we can creat our `Zoom` meeting.
+
+15. What is your strategy for ensuring everyone’s voice is heard?<br />
+    Will leave noates in our `Slack` channel or we can use Zoom by raising hands and other interactions.
+
+16. How will you ensure that you are creating a safe environment where everyone feels comfortable speaking up?<br />
+    every one is a leader.
+    Work Plan
+
+17. How you will identify tasks, assign tasks, know when they are complete, and manage work in general?<br />
+    We are planning to use `Trello board` to manage these stuff.
+
+18. What project management tool will be used?<br />
+    `Trello`, `Git Process`, `VS Code`
+
+19. What components of your project will live on GitHub?<br />
+    `Front-end`, `Back-end`
+
+20. How will you share the repository with your teammates?<br />
+    We are all in the one organization on github, 
+
+21. What is your Git flow?<br />
 When a feature is complete it is merged into the develop branch
-Will you be using a PR review workflow? If so, consider:
-How many people must review a PR?
-2 People.
-Who merges PRs?
-Leader.
-How often will you merge?
-at the end of the day.
-How will you communicate that it’s time to merge?
-Slack, and we will decide that in zoom meeting.
+
+22. Will you be using a PR review workflow? If so, consider:
+How many people must review a PR?<br />
+    `2 People`.
+
+23. Who merges PRs?<br />
+    `The Leader` or every one who pushes work but the presence of the user is a must.
+
+24. How often will you merge?<br />
+    `As needed` but usually At the end of the day.
+
+25. How will you communicate that it’s time to merge?<br />
+    `Slack`, and we will decide that in `Zoom` meeting.
+
+<br />
+<br />
+
+## Meet Our Team Members
+[![Mohammed Khateeb](https://avatars.githubusercontent.com/u/82310773?v=4)](https://github.com/mohnalkhateeb)  | Mohammed Khateeb
+
+[![Tariq Abulaban](https://avatars.githubusercontent.com/u/82310645?v=4)](https://github.com/Abu-laban)  | Tariq Abulaban
+
+[![Khaled Tahat](src/Components/assets/img/WireFrame/TNGRRLUMA-U01TUDCP3HT-847ceef88e12-512.jpg)](https://github.com/KZTahat)  | Khaled Tahat
+
+[![Laith Hayajneh](https://avatars.githubusercontent.com/u/82310575?v=4)](https://github.com/Laith-Hayajneh)  | Laith Hayajneh
+
+[![Dina Kofahi](https://avatars.githubusercontent.com/u/82310640?v=4)](https://github.com/Denakof)  | Dina Kofahi
+
+[![Sondos Jawhary](https://avatars.githubusercontent.com/u/82310673?v=4)](https://github.com/SJAljawhary)  | Sondos Jawhary
+
+
+## Project Wire Frames
+[![Home Page](src/Components/assets/img/WireFrame/homepage2.png)]() | Home Page 
+<br />
+
+[![Movies Page](src/Components/assets/img/WireFrame/movies.png)]() | Movies Page 
+<br />
+
+[![Comics & Characters](src/Components/assets/img/WireFrame/comic&characters.png)]() | Comics & Characters Page 
+<br />
+
+[![Login Page](src/Components/assets/img/WireFrame/login.png)]() | Login Page 
+<br />
+
+[![Profile Page](src/Components/assets/img/WireFrame/profile.png)]() | Profile Page 
+<br />

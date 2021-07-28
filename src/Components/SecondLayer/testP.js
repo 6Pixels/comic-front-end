@@ -28,9 +28,10 @@ const Laith = (props) => {
     classes.imgRounded,
     classes.imgGallery);
 
-  console.log("dataaaaaaaaaaaaaaa", props);
+
 
   return (
+
     <>
     <Parallax image={require("../assets/img/19681.jpg").default}>
         <div className={classes.container}>
@@ -38,14 +39,13 @@ const Laith = (props) => {
             <GridItem>
               <div className={classes.brand}>
                 <h1 className={classes.title}>It's Time To Be Hero.</h1>
-               
-                
-              </div>
-            </GridItem>
+
+               </div>
+             </GridItem>
           </GridContainer>
-          </div>
-      </Parallax>
-    </>
+           </div>
+       </Parallax> 
+     </>
   );
 };
 

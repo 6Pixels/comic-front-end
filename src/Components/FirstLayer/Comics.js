@@ -83,8 +83,11 @@ export class Comics extends Component {
     const isAuthenticated = this.props.auth0.isAuthenticated;
     return (
       <>
+
       <Back />
-        <SearchForm string="search for comics" searchItems={this.searchItems} />
+        
+        <SearchForm className='searchForm' string="search for comics" searchItems={this.searchItems} />
+
         {this.state.showItems && (
           <div>
             <div className="itemsContainer">
@@ -97,7 +100,7 @@ export class Comics extends Component {
                         <Card.Title>{element.name}</Card.Title>
                         {/* <Card.Title>{element.release_date}</Card.Title> */}
                         {isAuthenticated && (
-                          <Button variant="primary" onClick={() => this.addComic(index)}>Add to Fav</Button>
+                          <Button variant="danger" onClick={() => this.addComic(index)}>Add to Fav</Button>
                         )}
                       </Card.Body>
                     </Card>

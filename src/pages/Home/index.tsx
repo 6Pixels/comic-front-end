@@ -11,6 +11,7 @@ const MiddleBlock = lazy(() => import("../../Components/MiddleBlock"));
 const Container = lazy(() => import("../../common/Container"));
 const ScrollToTop = lazy(() => import("../../common/ScrollToTop"));
 const ContentBlock = lazy(() => import("../../Components/ContentBlock"));
+const Ourteam = lazy(() => import("../Slider/Ourteam"));
 
 const Home = () => {
   return (
@@ -53,6 +54,7 @@ const Home = () => {
         icon="clipart3523359.png"
         id="intro"
       />
+      <Ourteam />
       <Contact
         title={ContactContent.title}
         content={ContactContent.text}
