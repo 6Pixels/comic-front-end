@@ -57,8 +57,8 @@ export const Styles = createGlobalStyle`
     h4,
     h5,
     h6 {
-        font-family: 'Motiva Sans Bold', serif;
-        color: #5C0404;
+        font-family: fantasy;
+        color: #fff900;
         font-size: 56px;
         line-height: 1.18;
 
@@ -72,8 +72,9 @@ export const Styles = createGlobalStyle`
     }
 
     p {
-        color: #18216d;
-        font-size: 21px;        
+        font-family: 'Rajdhani', sans-serif;
+        color: #F5F5F5;
+        font-size: 30px;        
         line-height: 1.41;
     }
 

@@ -1,4 +1,4 @@
-6Pixels Team : 
+6Pixels Team :
 Dena Kofahi, Khaled Tahat, LAITH HAYAJNEH, Mohammad Alkhateeb, Sondos Al-jawhary, Tariq Abu-Laban
 https://github.com/6Pixels (Links to an external site.)
 
@@ -11,7 +11,7 @@ Mohammad Alkhateeb : JavaScript
 Sondos Al-jawhary : Team-worker
 Tariq Abu-Laban : Leadership
 How can you best utilize these strengths in the execution of your project?
-the best utilize these strengths put them together will make easy flow of task. 
+the best utilize these strengths put them together will make easy flow of task.
 In which professional competencies do you each want to develop greater strength?
 front and back end.
 Knowing that every person in your team needs to understand all aspects of the project, how do you plan to approach the day-to-day work?
@@ -49,7 +49,7 @@ What project management tool will be used?
 Trello.
 Git Process
 What components of your project will live on GitHub?
-front-end,  back-end
+front-end, back-end
 How will you share the repository with your teammates?
 All of them are owner in the repository.
 What is your Git flow?
@@ -62,4 +62,4 @@ Leader.
 How often will you merge?
 at the end of the day.
 How will you communicate that it’s time to merge?
-Slack,  and we will decide that in zoom meeting.
+Slack, and we will decide that in zoom meeting.
