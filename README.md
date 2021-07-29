@@ -130,3 +130,200 @@ Trello Board: https://trello.com/b/Wqx14PgP/project-301
 
 [![Profile Page](src/Components/assets/img/WireFrame/profile.png)]() | Profile Page
 <br />
+
+comic-front-end (repository)
+├── App.css
+├── App.js
+├── App.test.js
+├── Components
+│   ├── Block
+│   ├── ContactForm
+│   ├── ContentBlock
+│   │   ├── LeftContentBlock
+│   │   ├── RightContentBlock
+│   ├── CustomButtons
+│   │   └── Button.js
+│   ├── FirstLayer
+│   │   ├── Characters.js
+│   │   ├── Comics.js
+│   │   ├── Footer.js
+│   │   ├── Header.js
+│   │   ├── Movies.js
+│   │   └── Profile.js
+│   ├── Grid
+│   │   ├── GridContainer.js
+│   │   └── GridItem.js
+│   ├── MiddleBlock
+│   ├── SecondLayer
+│   │   ├── CharModal.js
+│   │   ├── LogInButton.js
+│   │   ├── LogOutButton.js
+│   │   ├── Profile.js
+│   │   ├── SearchForm.js
+│   │   ├── UpdateFormModal.js
+│   │   ├── testP.js
+│   │   ├── testP2.js
+│   │   └── testP3.js
+│   ├── ThirdLayer
+│   │   ├── AnimatedProgressProvider.js
+│   │   ├── ApperanceTable.js
+│   │   └── PowersChart.js
+│   └── assets
+│       ├── css
+│       │   └── material-kit-react.css.map
+│       ├── img
+│       │   ├── 19681.jpg
+│       │   ├── 2660432.png
+│       │   ├── 2660432.png:Zone.Identifier
+│       │   ├── 328.jpg
+│       │   ├── 328886.jpg
+│       │   ├── WireFrame
+│       │   │   ├── TNGRRLUMA-U01TUDCP3HT-847ceef88e12-512.jpg
+│       │   │   ├── TNGRRLUMA-U01TUDCP3HT-847ceef88e12-512.jpg:Zone.Identifier
+│       │   │   ├── comic&characters.png
+│       │   │   ├── homepage2.png
+│       │   │   ├── login.png
+│       │   │   ├── movies.png
+│       │   │   └── profile.png
+│       │   ├── apple-icon.png
+│       │   ├── bg.jpg
+│       │   ├── bg2.jpg
+│       │   ├── bg3.jpg
+│       │   ├── bg4.jpg
+│       │   ├── bg44.jpg
+│       │   ├── bg7.jpg
+│       │   ├── comic.jpg
+│       │   ├── comiccc.jpeg
+│       │   ├── examples
+│       │   │   ├── clem-onojegaw.jpg
+│       │   │   ├── clem-onojeghuo.jpg
+│       │   │   ├── cynthia-del-rio.jpg
+│       │   │   ├── mariya-georgieva.jpg
+│       │   │   ├── olu-eletu.jpg
+│       │   │   ├── studio-1.jpg
+│       │   │   ├── studio-2.jpg
+│       │   │   ├── studio-3.jpg
+│       │   │   ├── studio-4.jpg
+│       │   │   └── studio-5.jpg
+│       │   ├── faces
+│       │   │   ├── avatar.jpg
+│       │   │   ├── camp.jpg
+│       │   │   ├── card-profile1-square.jpg
+│       │   │   ├── card-profile2-square.jpg
+│       │   │   ├── card-profile4-square.jpg
+│       │   │   ├── card-profile5-square.jpg
+│       │   │   ├── card-profile6-square.jpg
+│       │   │   ├── christian.jpg
+│       │   │   ├── kendall.jpg
+│       │   │   └── marc.jpg
+│       │   ├── favicon.png
+│       │   ├── hero.jpg
+│       │   ├── img.jpg
+│       │   ├── iron.jpg
+│       │   ├── justice.jpg
+│       │   ├── landing-bg.jpg
+│       │   ├── landing.jpg
+│       │   ├── login.jpg
+│       │   ├── looo.jpg
+│       │   ├── movee.jpg
+│       │   ├── movie1.jpg
+│       │   ├── movie2.jpg
+│       │   ├── movie3.jpg
+│       │   ├── movie4.jpg
+│       │   ├── movies.jpg
+│       │   ├── movvv.jpg
+│       │   ├── profile-bg.jpg
+│       │   ├── profile.jpg
+│       │   ├── sign.jpg
+│       │   ├── superheroes.jpg
+│       ├── jss
+│       ├── material-kit-react
+│       │   ├── Parallax.js
+│       │   ├── components
+│       │   │   ├── GridContainer.js
+│       │   │   ├── GridItem.js
+│       │   │   ├── NavPills.js
+│       │   │   ├── badgeStyle.js
+│       │   │   ├── buttonStyle.js
+│       │   │   ├── cardBodyStyle.js
+│       │   │   ├── cardFooterStyle.js
+│       │   │   ├── cardHeaderStyle.js
+│       │   │   ├── cardStyle.js
+│       │   │   ├── customDropdownStyle.js
+│       │   │   ├── customInputStyle.js
+│       │   │   ├── customLinearProgressStyle.js
+│       │   │   ├── customTabsStyle.js
+│       │   │   ├── footerStyle.js
+│       │   │   ├── headerLinksStyle.js
+│       │   │   ├── headerStyle.js
+│       │   │   ├── infoStyle.js
+│       │   │   ├── material-kit-react.js
+│       │   │   ├── navPillsStyle.js
+│       │   │   ├── paginationStyle.js
+│       │   │   ├── parallaxStyle.js
+│       │   │   ├── snackbarContentStyle.js
+│       │   │   └── typographyStyle.js
+│       │   ├── customCheckboxRadioSwitch.js
+│       │   ├── imagesStyles.js
+│       │   ├── modalStyle.js
+│       │   ├── parallaxStyle.js
+│       │   ├── popoverStyles.js
+│       │   ├── tooltipsStyle.js
+│       │   └── views
+│       │       ├── components.js
+│       │       ├── componentsSections
+│       │       │   ├── basicsStyle.js
+│       │       │   ├── carouselStyle.js
+│       │       │   ├── completedStyle.js
+│       │       │   ├── downloadStyle.js
+│       │       │   ├── exampleStyle.js
+│       │       │   ├── javascriptStyles.js
+│       │       │   ├── loginStyle.js
+│       │       │   ├── navbarsStyle.js
+│       │       │   ├── notificationsStyles.js
+│       │       │   ├── pillsStyle.js
+│       │       │   ├── tabsStyle.js
+│       │       │   └── typographyStyle.js
+│       │       ├── landingPage.js
+│       │       ├── landingPageSections
+│       │       │   ├── productStyle.js
+│       │       │   ├── teamStyle.js
+│       │       │   └── workStyle.js
+│       │       ├── loginPage.js
+│       │       └── profilePage.js
+│       └── scss
+│           ├── core
+│           │   └── variables
+│           ├── material-kit-react.scss
+│           └── plugins
+├── Login.css
+├── Login.js
+├── common
+│   ├── Button
+│   ├── Container
+│   ├── Input
+│   ├── ScrollToTop
+│   ├── SvgIcon
+│   ├── TextArea
+│   ├── types.ts
+│   └── utils
+├── content
+│   ├── AboutContent.json
+│   ├── ContactContent.json
+│   ├── IntroContent.json
+│   ├── MiddleBlockContent.json
+│   ├── MissionContent.json
+│   └── ProductContent.json
+├── index.css
+├── index.js
+├── logo.svg
+├── pages
+│   ├── Home
+│   └── Slider
+│       ├── Ourteam.js
+│       └── Slider.js
+├── reportWebVitals.js
+├── router
+├── setupTests.js
+└── styles
+    └── styles.ts
