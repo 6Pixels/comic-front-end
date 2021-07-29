@@ -131,7 +131,7 @@ Trello Board: https://trello.com/b/Wqx14PgP/project-301
 [![Profile Page](src/Components/assets/img/WireFrame/profile.png)]() | Profile Page
 <br />
 
-comic-front-end (repository)
+`comic-front-end (repository)
 ├── App.css
 ├── App.js
 ├── App.test.js
@@ -326,4 +326,4 @@ comic-front-end (repository)
 ├── router
 ├── setupTests.js
 └── styles
-    └── styles.ts
+    └── styles.ts`
